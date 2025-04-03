@@ -30,6 +30,7 @@ public class Remote {
         System.out.println("Remote Brand: " + brand);
         if(battery!=null) {
             battery.showBattery();
+            battery.setType("U");
         }else System.out.println("The battery is Null");
     }
 }

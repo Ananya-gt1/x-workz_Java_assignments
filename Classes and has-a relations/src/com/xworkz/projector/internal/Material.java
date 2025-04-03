@@ -8,6 +8,12 @@ public class Material {
         this.name = name;
 
     }
+    public String getName(String name){
+        return name;
+    }
+    public void setName(){
+        this.name=name;
+    }
 
     public void showMaterialDetails() {
         System.out.println("Material Name: " + name );

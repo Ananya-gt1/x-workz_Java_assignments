@@ -29,6 +29,7 @@ public class Board {
         System.out.println("Board Material: " + material);
         if(capacitor!=null) {
             capacitor.showCapacitor();
+            capacitor.setType("Electrolytic");
         }else System.out.println("The capacitor is null");
     }
 }

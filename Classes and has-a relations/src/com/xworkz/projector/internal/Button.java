@@ -13,6 +13,7 @@ public class Button {
         System.out.println("Button Shape: " + shape);
         if(material!=null) {
             material.showMaterialDetails();
+material.getName("Plastic");
         }
         System.out.println("The material is null");
     }

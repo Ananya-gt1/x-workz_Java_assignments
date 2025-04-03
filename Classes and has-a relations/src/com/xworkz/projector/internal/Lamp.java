@@ -39,6 +39,8 @@ public class Lamp {
         System.out.println("Lamp Brand: " + brand + ", Wattage: " + wattage);
         if(warranty!=null){
             warranty.showWatterny();
+            warranty.setEndDate("28-09-2025");
+            warranty.setStartDate("23-09-2019");
         }else System.out.println("The warranty is null");
 
     }

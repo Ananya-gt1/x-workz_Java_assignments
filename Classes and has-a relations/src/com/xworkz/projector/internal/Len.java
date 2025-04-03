@@ -25,6 +25,7 @@ public class Len {
     }
     public void showLens()
     {
+
         System.out.println("Lens Type: " + type + ", Focal Length: " + focalLength);
     }
 }

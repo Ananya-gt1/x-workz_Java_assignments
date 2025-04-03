@@ -29,6 +29,8 @@ public class Wire {
         System.out.println("Wire Type: " + type);
         if(quality!=null) {
             quality.showQuality();
+            quality.setBrightness(34);
+            quality.setResolution("Bright");
         }else System.out.println("The quality is null");
     }
 }

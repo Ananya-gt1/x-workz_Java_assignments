@@ -28,6 +28,8 @@ public class Battery {
             System.out.println("Battery Type: " + type);
             if(voltage!=null) {
                 voltage.showVoltage();
+                voltage.setLevel(250);
+                voltage.setUnit("High");
             }else System.out.println("The voltage is null");
         }
 }
