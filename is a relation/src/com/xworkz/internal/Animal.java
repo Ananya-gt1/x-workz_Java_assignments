@@ -1,23 +1,24 @@
 package com.xworkz.internal;
 
 public class Animal {
+
     public void eat() {
-        System.out.println("Animal is eating...");
+        System.out.println("Running Eat in Animal...");
     }
 
     public void sleep() {
-        System.out.println("Animal is sleeping...");
+        System.out.println("Running Sleep in Animal...");
     }
 
     public void hunt() {
-        System.out.println("Animal makes a sound...");
+        System.out.println("Running Hunt in Animal...");
     }
 
     public void run() {
-        System.out.println("Animal is running...");
+        System.out.println("Running Run in Animal...");
     }
 
     public void breathe() {
-        System.out.println("Animal breathes oxygen...");
+        System.out.println("Running Breathe in Animal...");
     }
 }
