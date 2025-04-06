@@ -140,5 +140,12 @@ public class AnimalRunner {
         animal10.hunt();
         animal10.run();
         animal10.sleep();
+
+        Animal animal01=new Animal();
+        animal01.sleep();
+        animal01.run();
+        animal01.hunt();
+        animal01.breathe();
+        animal01.eat();
     }
 }

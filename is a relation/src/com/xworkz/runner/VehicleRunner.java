@@ -143,5 +143,12 @@ public class VehicleRunner {
         vehicle10.stop();
         vehicle10.start();
         vehicle10.capacity();
+
+        Vehicle vehicle01=new Vehicle();
+        vehicle01.capacity();
+        vehicle01.start();
+        vehicle01.stop();
+        vehicle01.horn();
+        vehicle01.buy();
     }
 }

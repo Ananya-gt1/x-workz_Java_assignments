@@ -144,6 +144,13 @@ public class ProfessorRunner {
             professor10.publishPapers();
             professor10.teach();
             professor10.research();
+
+            Professor professor01=new Professor();
+            professor01.research();
+            professor01.teach();
+            professor01.evaluate();
+            professor01.publishPapers();
+            professor01.guideStudents();
         }
     }
 

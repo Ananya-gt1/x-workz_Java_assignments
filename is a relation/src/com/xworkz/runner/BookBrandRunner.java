@@ -145,6 +145,12 @@ public class BookBrandRunner {
             bookbrand10.publish();
             bookbrand10.priceRange();
 
+            Bookbrand bookbrand01=new Bookbrand();
+            bookbrand01.priceRange();
+            bookbrand01.publish();
+            bookbrand01.genres();
+            bookbrand01.authors();
+            bookbrand01.popularity();
         }
     }
 

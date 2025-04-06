@@ -144,6 +144,14 @@ public class IplTeamsRunner {
             iplTeams10.homeGround();
             iplTeams10.popularity();
             iplTeams10.titlesWon();
+
+            IplTeams iplTeams01=new IplTeams();
+            iplTeams01.titlesWon();
+            iplTeams01.popularity();
+            iplTeams01.homeGround();
+            iplTeams01.teamName();
+            iplTeams01.captain();
+
         }
     }
 

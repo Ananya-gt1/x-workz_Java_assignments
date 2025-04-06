@@ -145,6 +145,13 @@ public class BookRunner {
             book10.summary();
             book10.characters();
 
+            Book book01=new Book();
+            book01.characters();
+            book01.summary();
+            book01.read();
+            book01.author();
+            book01.pages();
+
         }
     }
 

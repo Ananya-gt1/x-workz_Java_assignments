@@ -144,6 +144,13 @@ import com.xworkz.internal.*;
             star10.popularity();
             star10.priceRange();
             star10.publish();
+
+            Star star01=new Star();
+            star01.publish();
+            star01.authors();
+            star01.genres();
+            star01.popularity();
+            star01.priceRange();
         }
     }
 

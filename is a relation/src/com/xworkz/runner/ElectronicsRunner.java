@@ -144,5 +144,12 @@ public class ElectronicsRunner {
         electronics10.powerOff();
         electronics10.softwareUpdate();
 
+        Electronics electronics01=new Electronics();
+        electronics01.softwareUpdate();
+        electronics01.powerOff();
+        electronics01.buy();
+        electronics01.batteryStatus();
+        electronics01.powerOn();
+
     }
 }

@@ -145,5 +145,12 @@ public class FoodRunner {
         food10.taste();
         food10.ingredients();
 
+        Food food01=new Food();
+        food01.cook();
+        food01.taste();
+        food01.serve();
+        food01.calories();
+        food01.ingredients();
+
     }
 }

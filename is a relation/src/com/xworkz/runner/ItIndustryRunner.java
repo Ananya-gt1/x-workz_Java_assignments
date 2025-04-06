@@ -144,6 +144,13 @@ public class ItIndustryRunner {
             itIndustry10.revenue();
             itIndustry10.services();
             itIndustry10.technologies();
+
+            ItIndustry itIndustry01=new ItIndustry();
+            itIndustry01.technologies();
+            itIndustry01.marketShare();
+            itIndustry01.services();
+            itIndustry01.revenue();
+            itIndustry01.clients();
         }
     }
 
