@@ -1,23 +1,24 @@
 package com.xworkz.internal;
 
 public class Food {
+
     public void taste() {
-        System.out.println("Food has different tastes.");
+        System.out.println("Running Taste in Food...");
     }
 
     public void cook() {
-        System.out.println("Food is being cooked...");
+        System.out.println("Running Cook in Food...");
     }
 
     public void serve() {
-        System.out.println("Food is being served...");
+        System.out.println("Running Serve in Food...");
     }
 
     public void ingredients() {
-        System.out.println("Food has different ingredients.");
+        System.out.println("Running Ingredients in Food...");
     }
 
     public void calories() {
-        System.out.println("Checking calorie count...");
+        System.out.println("Running Calories in Food...");
     }
 }

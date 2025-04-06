@@ -1,23 +1,21 @@
 package com.xworkz.internal;
 
 public class Vehicle {
-    public Vehicle(){
-        System.out.println("The arg constructor of vehicle");
-    }
+
     public void stop(){
-        System.out.println("Running stop");
+        System.out.println("Running stop in Vehicle...");
     }
     public void start(){
-        System.out.println("Running start");
+        System.out.println("Running start in Vehicle...");
     }
     public void horn(){
-        System.out.println("Running horn");
+        System.out.println("Running horn in Vehicle...");
     }
     public void buy(){
-        System.out.println("Running Buy");
+        System.out.println("Running Buy in Vehicle...");
 
     }
     public void capacity() {
-        System.out.println("Vehicle has a certain capacity.");
+        System.out.println("Running Capacity in Vehicle...");
     }
 }

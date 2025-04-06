@@ -1,23 +1,24 @@
 package com.xworkz.internal;
 
 public class IplTeams {
+
     public void teamName() {
-        System.out.println("Displaying IPL Team Name");
+        System.out.println("Running Team name in Ipl Teams");
     }
 
     public void captain() {
-        System.out.println("Displaying Team Captain");
+        System.out.println("Running Captain in Ipl Teams");
     }
 
     public void homeGround() {
-        System.out.println("Displaying Home Ground");
+        System.out.println("Running Home ground in Ipl Teams");
     }
 
     public void titlesWon() {
-        System.out.println("Displaying Number of Titles Won");
+        System.out.println("Running Title won in Ipl Teams");
     }
 
     public void popularity() {
-        System.out.println("Displaying Popularity of the Team");
+        System.out.println("Running Popularity in Ipl Teams");
     }
 }
