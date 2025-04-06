@@ -1,23 +1,24 @@
 package com.xworkz.internal;
 
 public class Book {
+
     public void read() {
-        System.out.println("Reading the book");
+        System.out.println("Running Read in Book");
     }
 
     public void summary() {
-        System.out.println("Summary of the book");
+        System.out.println("Running Summary in Book");
     }
 
     public void characters() {
-        System.out.println("Main characters in the book");
+        System.out.println("Running Characters in Book");
     }
 
     public void author() {
-        System.out.println("Author of the book");
+        System.out.println("Running Author in Book");
     }
 
     public void pages() {
-        System.out.println("Number of pages");
+        System.out.println("Running Pages in Book");
     }
 }
