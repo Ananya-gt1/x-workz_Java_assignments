@@ -22,7 +22,7 @@ public class RubberRunner {
 
         Armyvehicle armyvehicle=new Armyvehicle();
         armyvehicle.wheel(rubber);
-        armyvehicle.wheel(tyre);
+        armyvehicle.wheel(tyre);;
         armyvehicle.wheel(rubber1);
         armyvehicle.wheel(mrfTyre);
     }
