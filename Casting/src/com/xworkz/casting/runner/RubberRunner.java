@@ -13,12 +13,14 @@ public class RubberRunner {
 
         Tyre tyre=new Tyre();
         tyre.expand();
+        tyre.compress();
 
         Rubber rubber1=new Tyre();
         rubber1.expand();
 
         MRFTyre mrfTyre=new MRFTyre();
         mrfTyre.expand();
+        mrfTyre.radial();
 
         Armyvehicle armyvehicle=new Armyvehicle();
         armyvehicle.wheel(rubber);
