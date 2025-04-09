@@ -1,0 +1,22 @@
+package com.xworkz.tostring.internal;
+
+import com.xworkz.tostring.external.God;
+
+public class Sita extends God {
+    private String name;
+    private String consort;
+    private String birthPlace;
+    private String knownFor;
+
+    public Sita(String name, String consort, String birthPlace, String knownFor) {
+        this.name = name;
+        this.consort = consort;
+        this.birthPlace = birthPlace;
+        this.knownFor = knownFor;
+    }
+
+    @Override
+    public String toString() {
+        return "Goddess: " + name + ", Consort: " + consort + ", Birth Place: " + birthPlace + ", Known For: " + knownFor;
+    }
+}

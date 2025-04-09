@@ -1,0 +1,22 @@
+package com.xworkz.tostring.internal;
+
+import com.xworkz.tostring.external.CelestialBody;
+
+public class Planet extends CelestialBody {
+    private String name;
+    private double mass; // in kilograms
+    private boolean hasLife;
+
+    // Constructor
+    public Planet(String name, double mass, boolean hasLife) {
+        this.name = name;
+        this.mass = mass;
+        this.hasLife = hasLife;
+    }
+
+    // toString method
+    @Override
+    public String toString() {
+        return "Planet: " + name + ", Mass: " + mass + " kg, Has Life: " + hasLife;
+    }
+}

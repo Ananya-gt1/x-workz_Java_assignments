@@ -1,0 +1,22 @@
+package com.xworkz.tostring.internal;
+
+import com.xworkz.tostring.external.Story;
+
+public class Thriller extends Story {
+    private String title;
+    private String writer;
+    private int suspenseLevel; // scale of 1 to 10
+
+    // Constructor
+    public Thriller(String title, String writer, int suspenseLevel) {
+        this.title = title;
+        this.writer = writer;
+        this.suspenseLevel = suspenseLevel;
+    }
+
+    // toString method
+    @Override
+    public String toString() {
+        return "Thriller Story: \"" + title + "\", Writer: " + writer + ", Suspense Level: " + suspenseLevel + "/10";
+    }
+}
