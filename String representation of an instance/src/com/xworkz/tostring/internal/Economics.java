@@ -7,14 +7,12 @@ public class Economics extends Subject {
     private boolean hasStatistics;
     private int totalUnits;
 
-    // Constructor
     public Economics(String type, boolean hasStatistics, int totalUnits) {
         this.type = type;
         this.hasStatistics = hasStatistics;
         this.totalUnits = totalUnits;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Economics - Type: " + type +

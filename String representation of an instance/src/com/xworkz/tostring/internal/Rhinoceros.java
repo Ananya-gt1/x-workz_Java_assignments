@@ -7,14 +7,12 @@ public class Rhinoceros extends WildAnimal {
     private int hornCount;
     private boolean isEndangered;
 
-    // Constructor
     public Rhinoceros(String species, int hornCount, boolean isEndangered) {
         this.species = species;
         this.hornCount = hornCount;
         this.isEndangered = isEndangered;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Rhinoceros - Species: " + species + ", Horn Count: " + hornCount + ", Endangered: " + isEndangered;

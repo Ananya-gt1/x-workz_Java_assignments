@@ -7,14 +7,12 @@ public class PoliticalScience extends Subject {
     private boolean includesConstitutionStudy;
     private int creditHours;
 
-    // Constructor
     public PoliticalScience(String ideologyFocus, boolean includesConstitutionStudy, int creditHours) {
         this.ideologyFocus = ideologyFocus;
         this.includesConstitutionStudy = includesConstitutionStudy;
         this.creditHours = creditHours;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Political Science - Ideology Focus: " + ideologyFocus +

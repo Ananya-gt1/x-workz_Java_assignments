@@ -7,14 +7,12 @@ public class Physics extends Subject {
     private boolean requiresLab;
     private int equationCount;
 
-    // Constructor
     public Physics(String branch, boolean requiresLab, int equationCount) {
         this.branch = branch;
         this.requiresLab = requiresLab;
         this.equationCount = equationCount;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Physics - Branch: " + branch +

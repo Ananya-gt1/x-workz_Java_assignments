@@ -7,14 +7,12 @@ public class Cow extends Animal {
     private String color;
     private boolean givesMilk;
 
-    // Constructor
     public Cow(String breed, String color, boolean givesMilk) {
         this.breed = breed;
         this.color = color;
         this.givesMilk = givesMilk;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Cow - Breed: " + breed + ", Color: " + color + ", Gives Milk: " + givesMilk;

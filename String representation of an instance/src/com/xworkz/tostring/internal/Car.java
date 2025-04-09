@@ -7,14 +7,12 @@ public class Car extends Vehicle {
     private String model;
     private int price;
 
-    // Constructor
     public Car(String brand, String model, int price) {
         this.brand = brand;
         this.model = model;
         this.price = price;
     }
 
-    // toString method
     @Override
     public String toString() {
         return

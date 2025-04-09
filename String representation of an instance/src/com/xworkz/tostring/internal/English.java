@@ -7,14 +7,12 @@ public class English extends Subject {
     private boolean grammarIncluded;
     private int chapterCount;
 
-    // Constructor
     public English(String literatureType, boolean grammarIncluded, int chapterCount) {
         this.literatureType = literatureType;
         this.grammarIncluded = grammarIncluded;
         this.chapterCount = chapterCount;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "English - Literature Type: " + literatureType +

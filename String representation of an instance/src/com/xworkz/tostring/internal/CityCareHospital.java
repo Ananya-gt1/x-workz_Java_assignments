@@ -7,14 +7,12 @@ public class CityCareHospital extends Hospital {
     private String location;
     private int numberOfBeds;
 
-    // Constructor
     public CityCareHospital(String name, String location, int numberOfBeds) {
         this.name = name;
         this.location = location;
         this.numberOfBeds = numberOfBeds;
     }
 
-    // toString method
     @Override
     public String toString() {
         return

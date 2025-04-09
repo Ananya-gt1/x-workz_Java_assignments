@@ -7,14 +7,12 @@ public class Star extends CelestialBody {
     private double brightness; // in Luminosity (solar units)
     private String type;       // e.g., Red Giant, White Dwarf, Main Sequence
 
-    // Constructor
     public Star(String name, double brightness, String type) {
         this.name = name;
         this.brightness = brightness;
         this.type = type;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Star: " + name + ", Brightness: " + brightness + " L☉, Type: " + type;

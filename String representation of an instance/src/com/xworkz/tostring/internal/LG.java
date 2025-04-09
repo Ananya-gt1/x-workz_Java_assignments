@@ -7,14 +7,12 @@ public class LG extends Television {
     private String screenType;
     private int price;
 
-    // Constructor
     public LG(String brand, String screenType, int price) {
         this.brand = brand;
         this.screenType = screenType;
         this.price = price;
     }
 
-    // toString method
     @Override
     public String toString() {
         return

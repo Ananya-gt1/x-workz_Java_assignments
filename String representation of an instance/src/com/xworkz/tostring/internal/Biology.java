@@ -7,14 +7,12 @@ public class Biology extends Subject {
     private boolean isTheoryHeavy;
     private int numberOfDiagrams;
 
-    // Constructor
     public Biology(String field, boolean isTheoryHeavy, int numberOfDiagrams) {
         this.field = field;
         this.isTheoryHeavy = isTheoryHeavy;
         this.numberOfDiagrams = numberOfDiagrams;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Biology - Field: " + field +

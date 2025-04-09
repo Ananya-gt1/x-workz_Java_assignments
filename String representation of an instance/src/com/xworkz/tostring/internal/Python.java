@@ -7,14 +7,12 @@ public class Python extends Animal {
     private double length; // meters
     private boolean isVenomous;
 
-    // Constructor
     public Python(String species, double length, boolean isVenomous) {
         this.species = species;
         this.length = length;
         this.isVenomous = isVenomous;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Python - Species: " + species + ", Length: " + length + " m, Venomous: " + isVenomous;

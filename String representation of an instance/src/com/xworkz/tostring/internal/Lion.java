@@ -7,14 +7,12 @@ public class Lion extends WildAnimal {
     private String habitat;
     private int lifespan;
 
-    // Constructor
     public Lion(String name, String habitat, int lifespan) {
         this.name = name;
         this.habitat = habitat;
         this.lifespan = lifespan;
     }
 
-    // toString method
     @Override
     public String toString() {
         return
