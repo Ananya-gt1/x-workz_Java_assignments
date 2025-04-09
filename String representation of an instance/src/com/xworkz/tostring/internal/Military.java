@@ -7,14 +7,12 @@ public class Military extends Human {
     private String rank; // e.g., Captain, Major, Colonel
     private String unit; // e.g., Infantry, Air Force, Navy
 
-    // Constructor
     public Military(String name, String rank, String unit) {
         this.name = name;
         this.rank = rank;
         this.unit = unit;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Military Personnel: " + name + ", Rank: " + rank + ", Unit: " + unit;
