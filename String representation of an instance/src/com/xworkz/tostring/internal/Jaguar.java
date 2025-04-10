@@ -17,4 +17,9 @@ public class Jaguar extends WildAnimal {
     public String toString() {
         return "Jaguar - Region: " + region + ", Nocturnal: " + isNocturnal + ", Bite Force: " + biteForce + " PSI";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 65;
+    }
 }

@@ -19,4 +19,9 @@ public class PoliticalScience extends Subject {
                 ", Constitution Study: " + includesConstitutionStudy +
                 ", Credit Hours: " + creditHours;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 43;
+    }
 }

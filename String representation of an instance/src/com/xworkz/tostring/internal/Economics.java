@@ -19,4 +19,9 @@ public class Economics extends Subject {
                 ", Includes Statistics: " + hasStatistics +
                 ", Total Units: " + totalUnits;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 79;
+    }
 }

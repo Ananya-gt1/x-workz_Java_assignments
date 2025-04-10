@@ -17,4 +17,9 @@ public class Spaceship extends Vehicle {
     public String toString() {
         return "Spaceship - Name: " + name + ", Capacity: " + capacity + ", Reusable: " + isReusable;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 23;
+    }
 }

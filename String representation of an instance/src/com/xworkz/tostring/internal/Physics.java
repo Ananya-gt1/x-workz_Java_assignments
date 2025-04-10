@@ -19,4 +19,9 @@ public class Physics extends Subject {
                 ", Requires Lab: " + requiresLab +
                 ", Equation Count: " + equationCount;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 46;
+    }
 }

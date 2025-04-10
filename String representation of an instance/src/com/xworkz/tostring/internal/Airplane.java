@@ -17,4 +17,9 @@ public class Airplane extends Vehicle {
     public String toString() {
         return "Airplane - Airline: " + airline + ", Capacity: " + passengerCapacity + ", International: " + isInternational;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 9;
+    }
 }

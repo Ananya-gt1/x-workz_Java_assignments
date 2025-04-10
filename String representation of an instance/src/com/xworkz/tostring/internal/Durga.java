@@ -19,4 +19,9 @@ public class Durga extends God {
     public String toString() {
         return "Goddess: " + name + ", Weapon: " + weapon + ", Vehicle: " + vehicle + ", Known For: " + knownFor;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 81;
+    }
 }

@@ -17,4 +17,9 @@ public class Bike extends Vehicle {
     public String toString() {
         return "Bike - Brand: " + brand + ", Engine: " + engineCC + "cc, Electric: " + isElectric;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 2;
+    }
 }

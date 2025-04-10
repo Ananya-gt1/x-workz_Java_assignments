@@ -17,4 +17,9 @@ public class Palav extends IndianFood {
     public String toString() {
         return "Palav - Variety: " + variety + ", Main Ingredient: " + mainIngredient + ", Vegetarian: " + isVeg;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 49;
+    }
 }

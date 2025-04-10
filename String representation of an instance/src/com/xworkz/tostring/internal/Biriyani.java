@@ -17,4 +17,9 @@ public class Biriyani extends IndianFood {
     public String toString() {
         return "Biriyani Type: " + type + ", Origin: " + origin + ", Spicy: " + isSpicy;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 100;
+    }
 }

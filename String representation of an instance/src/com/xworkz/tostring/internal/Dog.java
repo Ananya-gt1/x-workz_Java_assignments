@@ -17,4 +17,9 @@ public class Dog extends Animal {
     public String toString() {
         return "Dog - Breed: " + breed + ", Color: " + color + ", Age: " + age + " years";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 83;
+    }
 }

@@ -17,4 +17,9 @@ public class SamsungTV extends Television {
     public String toString() {
         return "Samsung TV - Screen: " + screenSize + " inch, Smart: " + isSmartTV + ", Resolution: " + resolution;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 35;
+    }
 }

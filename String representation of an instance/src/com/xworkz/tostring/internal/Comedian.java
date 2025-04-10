@@ -17,4 +17,9 @@ public class Comedian {
     public String toString() {
         return "Comedian: " + name + ", Age: " + age + ", Style: " + signatureStyle + ", Famous For: " + popularMovie;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 87;
+    }
 }

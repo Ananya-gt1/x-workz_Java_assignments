@@ -17,4 +17,9 @@ public class Maths extends Subject {
     public String toString() {
         return "Subject: " + subjectName + ", Teacher: " + teacher + ", Chapters: " + numberOfChapters;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 57;
+    }
 }

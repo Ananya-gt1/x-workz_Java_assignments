@@ -19,4 +19,9 @@ public class Geography extends Subject {
                 ", Includes Map Study: " + includesMapStudy +
                 ", Chapters: " + numberOfChapters;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 73;
+    }
 }

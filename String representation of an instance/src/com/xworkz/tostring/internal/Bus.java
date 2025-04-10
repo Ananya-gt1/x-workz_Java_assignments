@@ -17,4 +17,9 @@ public class Bus extends Vehicle {
     public String toString() {
         return "Bus - Operator: " + operator + ", Seats: " + seatingCapacity + ", AC: " + isAC;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 95;
+    }
 }

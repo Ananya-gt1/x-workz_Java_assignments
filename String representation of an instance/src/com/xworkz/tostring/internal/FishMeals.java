@@ -17,4 +17,9 @@ public class FishMeals extends IndianFood {
     public String toString() {
         return "Fish Meal - Type: " + fishType + ", Region: " + region + ", Fried: " + isFried;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 74;
+    }
 }

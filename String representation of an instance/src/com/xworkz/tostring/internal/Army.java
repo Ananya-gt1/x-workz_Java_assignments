@@ -17,4 +17,9 @@ public class Army extends DefenseForce {
     public String toString() {
         return "Army of " + country + ", Soldiers: " + soldiersCount + ", Commander: " + commander;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 8;
+    }
 }

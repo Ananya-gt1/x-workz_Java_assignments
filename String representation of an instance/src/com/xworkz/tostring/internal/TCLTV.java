@@ -17,4 +17,9 @@ public class TCLTV extends Television {
     public String toString() {
         return "TCL TV - Screen: " + screenSize + " inch, Smart: " + isSmartTV + ", Resolution: " + resolution;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 20;
+    }
 }

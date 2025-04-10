@@ -17,4 +17,9 @@ public class Raccoon extends WildAnimal {
     public String toString() {
         return "Raccoon - Mask Face: " + hasMaskFace + ", Nocturnal: " + isNocturnal + ", Favorite Food: " + favoriteFood;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 40;
+    }
 }

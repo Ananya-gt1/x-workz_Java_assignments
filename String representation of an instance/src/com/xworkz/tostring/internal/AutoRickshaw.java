@@ -17,4 +17,9 @@ public class AutoRickshaw extends Vehicle {
     public String toString() {
         return "AutoRickshaw - Model: " + model + ", Electric: " + isElectric + ", Fare: ₹" + farePerKm + "/km";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 4;
+    }
 }

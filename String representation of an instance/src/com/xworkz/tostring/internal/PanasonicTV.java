@@ -17,4 +17,9 @@ public class PanasonicTV extends Television {
     public String toString() {
         return "Panasonic TV - Screen: " + screenSize + " inch, Smart: " + isSmartTV + ", Resolution: " + resolution;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 48;
+    }
 }

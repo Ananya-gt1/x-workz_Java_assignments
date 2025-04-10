@@ -17,4 +17,9 @@ public class Leopard extends WildAnimal {
     public String toString() {
         return "Leopard - Habitat: " + habitat + ", Climber: " + isClimber + ", Spots Pattern: " + spotsPattern;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 61;
+    }
 }

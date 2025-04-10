@@ -19,4 +19,9 @@ public class ShriRama extends God {
     public String toString() {
         return "God: " + name + ", Consort: " + consort + ", Bow: " + bow + ", Kingdom: " + kingdom;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 28;
+    }
 }

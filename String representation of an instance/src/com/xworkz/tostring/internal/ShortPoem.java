@@ -17,4 +17,9 @@ public class ShortPoem extends Literature {
     public String toString() {
         return "Short Poem: \"" + title + "\", Poet: " + poet + ", Lines: " + lineCount;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 30;
+    }
 }

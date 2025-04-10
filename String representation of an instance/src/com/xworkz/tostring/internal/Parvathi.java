@@ -19,4 +19,9 @@ public class Parvathi extends God {
     public String toString() {
         return "Goddess: " + name + ", Consort: " + consort + ", Form: " + form + ", Vehicle: " + vehicle;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 47;
+    }
 }

@@ -17,4 +17,9 @@ public class Java extends Course {
     public String toString() {
         return "Course Name: " + courseName + ", Instructor: " + instructor + ", Duration: " + durationInWeeks + " weeks";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 64;
+    }
 }

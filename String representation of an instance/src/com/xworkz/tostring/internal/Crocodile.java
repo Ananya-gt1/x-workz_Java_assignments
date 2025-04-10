@@ -17,4 +17,9 @@ public class Crocodile extends WildAnimal {
     public String toString() {
         return "Crocodile - Water Type: " + waterType + ", Length: " + length + " m, Aggressive: " + isAggressive;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 85;
+    }
 }

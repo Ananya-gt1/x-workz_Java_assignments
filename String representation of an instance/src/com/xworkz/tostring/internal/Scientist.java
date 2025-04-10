@@ -17,4 +17,9 @@ public class Scientist extends Human {
     public String toString() {
         return "Scientist: " + name + ", Field: " + fieldOfStudy + ", Discoveries: " + numberOfDiscoveries;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 34;
+    }
 }

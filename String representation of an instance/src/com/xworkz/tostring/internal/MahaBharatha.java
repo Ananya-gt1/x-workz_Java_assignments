@@ -17,4 +17,9 @@ public class MahaBharatha extends Epic {
     public String toString() {
         return "Epic: Mahabharatha, Author: " + author + ", Main Character: " + mainCharacter + ", Verses: " + numberOfVerses;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 58;
+    }
 }

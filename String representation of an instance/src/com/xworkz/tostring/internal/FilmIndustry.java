@@ -17,4 +17,9 @@ public class FilmIndustry extends Industry {
     public String toString() {
         return "Film Industry: " + industryName + ", HQ: " + headquarters + ", Movies/Year: " + numberOfMoviesPerYear;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 75;
+    }
 }

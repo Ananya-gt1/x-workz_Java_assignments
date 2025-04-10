@@ -17,4 +17,9 @@ public class Heroine {
     public String toString() {
         return "Heroine: " + name + ", Age: " + age + ", Debut: " + debutMovie + ", Popular Role: " + popularRole;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 69;
+    }
 }

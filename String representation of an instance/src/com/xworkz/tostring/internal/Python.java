@@ -17,4 +17,9 @@ public class Python extends Animal {
     public String toString() {
         return "Python - Species: " + species + ", Length: " + length + " m, Venomous: " + isVenomous;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 41;
+    }
 }

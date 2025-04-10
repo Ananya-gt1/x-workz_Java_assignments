@@ -17,4 +17,9 @@ public class CoastGuard extends DefenseForce {
     public String toString() {
         return "Coast Guard of " + country + ", Patrol Boats: " + patrolBoats + ", DG: " + directorGeneral;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 88;
+    }
 }

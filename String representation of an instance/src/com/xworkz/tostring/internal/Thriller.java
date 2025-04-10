@@ -17,4 +17,9 @@ public class Thriller extends Story {
     public String toString() {
         return "Thriller Story: \"" + title + "\", Writer: " + writer + ", Suspense Level: " + suspenseLevel + "/10";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 19;
+    }
 }

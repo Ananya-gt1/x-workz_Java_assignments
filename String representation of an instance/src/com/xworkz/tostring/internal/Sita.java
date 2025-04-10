@@ -19,4 +19,9 @@ public class Sita extends God {
     public String toString() {
         return "Goddess: " + name + ", Consort: " + consort + ", Birth Place: " + birthPlace + ", Known For: " + knownFor;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 26;
+    }
 }

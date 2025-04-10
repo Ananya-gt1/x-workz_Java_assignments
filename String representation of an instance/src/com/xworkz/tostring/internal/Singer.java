@@ -17,4 +17,9 @@ public class Singer {
     public String toString() {
         return "Singer: " + name + ", Age: " + age + ", Genre: " + genre + ", Hit Song: " + hitSong;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 27;
+    }
 }

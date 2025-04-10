@@ -17,4 +17,9 @@ public class FightMaster {
     public String toString() {
         return "Fight Master: " + name + ", Age: " + age + ", Style: " + fightStyle + ", Known For: " + popularMovie;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 76;
+    }
 }

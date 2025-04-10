@@ -18,4 +18,10 @@ public class Yajamana extends Cinema {
     public String toString() {
        return "Actor Name:"+this.actorName +" Cost:"+this.cost + "  Duration:"+this.duration;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 11;
+    }
 }

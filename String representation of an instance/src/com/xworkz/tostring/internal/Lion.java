@@ -21,4 +21,9 @@ public class Lion extends WildAnimal {
                 ", lifespan=" + lifespan + " years"
                ;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 59;
+    }
 }

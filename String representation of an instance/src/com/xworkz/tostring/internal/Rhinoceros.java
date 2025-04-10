@@ -17,4 +17,9 @@ public class Rhinoceros extends WildAnimal {
     public String toString() {
         return "Rhinoceros - Species: " + species + ", Horn Count: " + hornCount + ", Endangered: " + isEndangered;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 37;
+    }
 }

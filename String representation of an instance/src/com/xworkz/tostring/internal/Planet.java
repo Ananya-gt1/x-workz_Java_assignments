@@ -17,4 +17,9 @@ public class Planet extends CelestialBody {
     public String toString() {
         return "Planet: " + name + ", Mass: " + mass + " kg, Has Life: " + hasLife;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 45;
+    }
 }

@@ -23,4 +23,9 @@ public class Cat extends Animal {
                 ", price=" + price
                 ;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 93;
+    }
 }

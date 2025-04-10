@@ -17,4 +17,9 @@ public class ShortStory extends Literature {
     public String toString() {
         return "Short Story: \"" + title + "\", Author: " + author + ", Pages: " + pageCount;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 29;
+    }
 }

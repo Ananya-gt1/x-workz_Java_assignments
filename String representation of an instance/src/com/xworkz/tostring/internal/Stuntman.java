@@ -17,4 +17,9 @@ public class Stuntman {
     public String toString() {
         return "Stuntman: " + name + ", Age: " + age + ", Specialty: " + specialty + ", Famous For: " + famousMovie;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 21;
+    }
 }

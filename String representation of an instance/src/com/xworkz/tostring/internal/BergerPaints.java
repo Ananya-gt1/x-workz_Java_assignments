@@ -19,4 +19,9 @@ public class BergerPaints extends PaintBrand {
                 ", Finish: " + finishType +
                 ", Quantity: " + quantityInLiters + "L";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 3;
+    }
 }

@@ -17,4 +17,9 @@ public class Cheetah extends WildAnimal {
     public String toString() {
         return "Cheetah - Top Speed: " + topSpeed + " km/h, Continent: " + continent + ", Spotted: " + isSpotted;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 92;
+    }
 }

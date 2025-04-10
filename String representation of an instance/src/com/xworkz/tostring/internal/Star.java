@@ -16,5 +16,11 @@ public class Star extends CelestialBody {
     @Override
     public String toString() {
         return "Star: " + name + ", Brightness: " + brightness + " L☉, Type: " + type;
+
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 22;
     }
 }

@@ -17,4 +17,9 @@ public class Truck extends Vehicle {
     public String toString() {
         return "Truck - Company: " + company + ", Load: " + loadCapacity + " tons, Trailer: " + hasTrailer;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 15;
+    }
 }

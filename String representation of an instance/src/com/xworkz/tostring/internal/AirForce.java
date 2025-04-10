@@ -17,4 +17,9 @@ public class AirForce extends DefenseForce {
     public String toString() {
         return "Air Force of " + country + ", Aircrafts: " + aircrafts + ", Air Chief: " + airChief;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 10;
+    }
 }

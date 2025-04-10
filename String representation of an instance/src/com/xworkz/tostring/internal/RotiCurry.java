@@ -17,4 +17,9 @@ public class RotiCurry extends IndianFood {
     public String toString() {
         return "Roti Curry - Curry Type: " + curryType + ", Roti Count: " + rotiCount + ", Spicy: " + isSpicy;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 36;
+    }
 }

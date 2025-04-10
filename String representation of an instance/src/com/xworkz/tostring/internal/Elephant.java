@@ -17,4 +17,9 @@ public class Elephant extends WildAnimal {
     public String toString() {
         return "Elephant - Species: " + species + ", Trunk Length: " + trunkLength + " m, Domesticated: " + isDomesticated;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 78;
+    }
 }

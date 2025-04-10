@@ -17,4 +17,9 @@ public class Cow extends Animal {
     public String toString() {
         return "Cow - Breed: " + breed + ", Color: " + color + ", Gives Milk: " + givesMilk;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 86;
+    }
 }

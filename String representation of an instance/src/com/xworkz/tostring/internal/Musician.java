@@ -17,4 +17,9 @@ public class Musician {
     public String toString() {
         return "Musician: " + name + ", Age: " + age + ", Specialization: " + specialization + ", Famous For: " + famousWork;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 55;
+    }
 }

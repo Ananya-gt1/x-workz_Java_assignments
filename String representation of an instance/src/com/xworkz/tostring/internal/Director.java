@@ -17,4 +17,9 @@ public class Director {
     public String toString() {
         return "Director: " + name + ", Age: " + age + ", Style: " + directingStyle + ", Famous For: " + famousMovie;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 84;
+    }
 }

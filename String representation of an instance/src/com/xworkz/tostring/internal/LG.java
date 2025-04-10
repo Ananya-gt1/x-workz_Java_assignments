@@ -21,4 +21,9 @@ public class LG extends Television {
                 ", price=" + price
                ;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 60;
+    }
 }

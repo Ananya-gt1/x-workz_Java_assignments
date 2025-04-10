@@ -17,4 +17,9 @@ public class HelpingHands extends NGO {
     public String toString() {
         return "NGO Name: " + name + ", Location: " + location + ", Volunteers: " + volunteers;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 71;
+    }
 }

@@ -17,4 +17,9 @@ public class Military extends Human {
     public String toString() {
         return "Military Personnel: " + name + ", Rank: " + rank + ", Unit: " + unit;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 56;
+    }
 }

@@ -19,4 +19,9 @@ public class Biology extends Subject {
                 ", Theory Heavy: " + isTheoryHeavy +
                 ", Diagrams: " + numberOfDiagrams;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 1;
+    }
 }

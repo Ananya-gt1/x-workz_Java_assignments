@@ -17,4 +17,9 @@ public class Mystery extends Story {
     public String toString() {
         return "Mystery Story: \"" + title + "\", Author: " + author + ", Chapters: " + numberOfChapters;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 54;
+    }
 }

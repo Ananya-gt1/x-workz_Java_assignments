@@ -17,4 +17,9 @@ public class Producer {
     public String toString() {
         return "Producer: " + name + ", Age: " + age + ", Company: " + productionCompany + ", Known For: " + notableMovie;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 42;
+    }
 }

@@ -19,4 +19,9 @@ public class History extends Subject {
                 ", Important Figures: " + importantFigures +
                 ", Ancient History: " + isAncientHistory;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 68;
+    }
 }

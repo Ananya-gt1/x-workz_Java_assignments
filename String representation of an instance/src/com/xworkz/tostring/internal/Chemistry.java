@@ -19,4 +19,9 @@ public class Chemistry extends Subject {
                 ", Lab Required: " + isLabRequired +
                 ", Chapters: " + numberOfChapters;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 91;
+    }
 }

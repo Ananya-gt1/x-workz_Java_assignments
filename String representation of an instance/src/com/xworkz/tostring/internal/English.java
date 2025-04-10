@@ -19,4 +19,9 @@ public class English extends Subject {
                 ", Grammar Included: " + grammarIncluded +
                 ", Chapters: " + chapterCount;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 77;
+    }
 }

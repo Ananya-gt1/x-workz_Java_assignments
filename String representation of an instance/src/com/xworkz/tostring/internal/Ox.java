@@ -17,4 +17,9 @@ public class Ox extends Animal {
     public String toString() {
         return "Ox - Breed: " + breed + ", Color: " + color + ", Used for Farming: " + usedForFarming;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 50;
+    }
 }

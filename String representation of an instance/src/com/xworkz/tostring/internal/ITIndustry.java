@@ -17,4 +17,9 @@ public class ITIndustry extends Industry {
     public String toString() {
         return "IT Industry - Company: " + companyName + ", Location: " + location + ", Employees: " + numberOfEmployees;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 66;
+    }
 }

@@ -17,4 +17,9 @@ public class Scooter extends Vehicle {
     public String toString() {
         return "Scooter - Brand: " + brand + ", Electric: " + isElectric + ", Top Speed: " + topSpeed + " km/h";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 33;
+    }
 }

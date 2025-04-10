@@ -17,4 +17,9 @@ public class Tiger extends WildAnimal {
     public String toString() {
         return "Tiger - Species: " + species + ", Habitat: " + habitat + ", Endangered: " + isEndangered;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 18;
+    }
 }

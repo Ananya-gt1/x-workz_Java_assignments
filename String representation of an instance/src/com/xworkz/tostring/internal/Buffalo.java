@@ -17,4 +17,9 @@ public class Buffalo extends Animal {
     public String toString() {
         return "Buffalo - Breed: " + breed + ", Milk Production: " + milkProduction + " L/day, Used for Ploughing: " + usedForPloughing;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 96;
+    }
 }

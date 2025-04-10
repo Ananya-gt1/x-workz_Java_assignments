@@ -17,4 +17,9 @@ public class Villain {
     public String toString() {
         return "Villain: " + name + ", Age: " + age + ", Style: " + evilStyle + ", Famous For: " + famousMovie;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 14;
+    }
 }

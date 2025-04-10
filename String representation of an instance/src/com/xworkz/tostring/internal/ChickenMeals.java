@@ -17,4 +17,9 @@ public class ChickenMeals extends IndianFood {
     public String toString() {
         return "Chicken Meal - Dish: " + dishName + ", Style: " + style + ", Boneless: " + isBoneless;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 90;
+    }
 }

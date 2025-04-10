@@ -19,4 +19,9 @@ public class Brahma extends God {
     public String toString() {
         return "God: " + name + ", Heads: " + numberOfHeads + ", Vehicle: " + vehicle + ", Consort: " + consort;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 98;
+    }
 }

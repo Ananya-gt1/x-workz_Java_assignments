@@ -17,4 +17,9 @@ public class Boat extends Vehicle {
     public String toString() {
         return "Boat - Type: " + type + ", Capacity: " + capacity + ", Motorized: " + isMotorized;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 99;
+    }
 }

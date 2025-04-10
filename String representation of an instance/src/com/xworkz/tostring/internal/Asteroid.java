@@ -17,4 +17,9 @@ public class Asteroid extends CelestialBody {
     public String toString() {
         return "Asteroid: " + name + ", Diameter: " + diameter + " km, Composition: " + composition;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 6;
+    }
 }

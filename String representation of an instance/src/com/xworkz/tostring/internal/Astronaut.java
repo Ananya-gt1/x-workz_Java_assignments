@@ -17,4 +17,9 @@ public class Astronaut extends Human {
     public String toString() {
         return "Astronaut: " + name + ", Missions: " + missions + ", Agency: " + agency;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 5;
+    }
 }

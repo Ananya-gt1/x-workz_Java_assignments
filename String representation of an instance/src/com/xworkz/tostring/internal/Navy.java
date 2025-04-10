@@ -17,4 +17,9 @@ public class Navy extends DefenseForce {
     public String toString() {
         return "Navy of " + country + ", Ships: " + ships + ", Admiral: " + admiral;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 53;
+    }
 }

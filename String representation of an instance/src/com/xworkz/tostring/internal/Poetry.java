@@ -17,4 +17,9 @@ public class Poetry extends Literature {
     public String toString() {
         return "Poetry Title: \"" + title + "\", Poet: " + poet + ", Style: " + style;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 44;
+    }
 }

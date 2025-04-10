@@ -17,4 +17,9 @@ public class Helicopter extends Vehicle {
     public String toString() {
         return "Helicopter - Model: " + model + ", Blades: " + rotorBlades + ", Military: " + isMilitary;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 72;
+    }
 }

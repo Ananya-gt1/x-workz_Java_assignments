@@ -17,4 +17,9 @@ public class Ramayana extends Epic {
     public String toString() {
         return "Epic: Ramayana, Author: " + author + ", Main Character: " + mainCharacter + ", Chapters: " + numberOfChapters;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 39;
+    }
 }

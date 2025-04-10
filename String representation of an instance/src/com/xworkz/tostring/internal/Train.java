@@ -17,4 +17,9 @@ public class Train extends Vehicle {
     public String toString() {
         return "Train - Name: " + trainName + ", Coaches: " + coaches + ", Express: " + isExpress;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Original code:"+super.hashCode());
+        return 16;
+    }
 }
