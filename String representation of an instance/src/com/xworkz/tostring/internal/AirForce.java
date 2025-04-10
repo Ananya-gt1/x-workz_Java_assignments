@@ -20,6 +20,6 @@ public class AirForce extends DefenseForce {
     @Override
     public int hashCode() {
         System.out.println("Original code:"+super.hashCode());
-        return 10;;
+        return 10;
     }
 }
