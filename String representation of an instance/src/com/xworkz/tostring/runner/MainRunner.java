@@ -418,9 +418,12 @@ public class MainRunner {
         System.out.println(tractor);
         System.out.println(tractor.hashCode());
 
-        Airplane airplane = new Airplane("Air India", 180, true);
-        System.out.println(airplane);
-        System.out.println(airplane.hashCode());
+        Airplane airplane1 = new Airplane("Air India", 180, true);
+        Airplane airplane2=new Airplane("USA Plane",456,true);
+        System.out.println(airplane1);
+        System.out.println(airplane2);
+        System.out.println("The Instances are:"+airplane1.equals(airplane2));
+        System.out.println(airplane1.hashCode());
 
         Boat boat = new Boat("Motorboat", 6, true);
         System.out.println(boat);
