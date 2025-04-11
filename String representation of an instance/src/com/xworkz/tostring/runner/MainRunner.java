@@ -149,9 +149,13 @@ public class MainRunner {
         System.out.println(navy);
         System.out.println(navy.hashCode());
 
-        AirForce airForce = new AirForce("India", 1700, "Air Chief Marshal V. R. Chaudhari");
-        System.out.println(airForce);
-        System.out.println(airForce.hashCode());
+        AirForce airForce1 = new AirForce("India", 1700, "Air Chief Marshal V. R. Chaudhari");
+        AirForce airForce2=new AirForce("Russia",3456,"Modi");
+        System.out.println(airForce1);
+        System.out.println(airForce2);
+        System.out.println("The Air force are: "+airForce1.equals(airForce2));
+        System.out.println(airForce1.hashCode());
+
 
         CoastGuard coastGuard = new CoastGuard("India", 60, "DG Rakesh Pal");
         System.out.println(coastGuard);
