@@ -22,4 +22,17 @@ public class Bike extends Vehicle {
         System.out.println("Original code:"+super.hashCode());
         return 2;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Bike");
+            Bike bike1 = this;
+            Bike bike2 = (Bike) obj;
+            if (bike1.brand == bike2.brand && bike1.engineCC == bike2.engineCC && bike1.isElectric == bike2.isElectric) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

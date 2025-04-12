@@ -22,4 +22,17 @@ public class AutoRickshaw extends Vehicle {
         System.out.println("Original code:"+super.hashCode());
         return 4;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Autorickshaw");
+            AutoRickshaw autoRickshaw1 = this;
+            AutoRickshaw autoRickshaw2 = (AutoRickshaw) obj;
+            if (autoRickshaw1.model == autoRickshaw2.model && autoRickshaw1.isElectric == autoRickshaw2.isElectric && autoRickshaw1.farePerKm == autoRickshaw2.farePerKm) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -22,4 +22,17 @@ public class Astronaut extends Human {
         System.out.println("Original code:"+super.hashCode());
         return 5;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Astronaut");
+            Astronaut astronaut1 = this;
+            Astronaut astronaut2 = (Astronaut) obj;
+            if (astronaut1.name == astronaut2.name && astronaut1.missions == astronaut2.missions && astronaut1.agency == astronaut2.agency) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

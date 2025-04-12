@@ -22,4 +22,17 @@ public class Elephant extends WildAnimal {
         System.out.println("Original code:"+super.hashCode());
         return 78;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Airplane");
+            Airplane airplane1 = this;
+            Airplane airplane2 = (Airplane) obj;
+            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
+                System.out.println("The Air Plane are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

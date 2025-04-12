@@ -24,4 +24,17 @@ public class Biology extends Subject {
         System.out.println("Original code:"+super.hashCode());
         return 1;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Biology");
+            Biology biology1 = this;
+            Biology biology2 = (Biology) obj;
+            if (biology1.field == biology2.field && biology1.isTheoryHeavy == biology2.isTheoryHeavy && biology1.numberOfDiagrams == biology2.numberOfDiagrams) {
+                System.out.println("The objects are....."+biology1.equals(biology2));
+                return true;
+            }
+        }
+        return false;
+    }
 }

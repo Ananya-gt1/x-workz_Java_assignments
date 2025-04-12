@@ -24,4 +24,17 @@ public class BergerPaints extends PaintBrand {
         System.out.println("Original code:"+super.hashCode());
         return 3;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is BergerPaints");
+            BergerPaints bergerPaints1 = this;
+            BergerPaints bergerPaints2 = (BergerPaints) obj;
+            if (bergerPaints1.color == bergerPaints2.color && bergerPaints1.finishType == bergerPaints2.finishType && bergerPaints1.quantityInLiters == bergerPaints2.quantityInLiters) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

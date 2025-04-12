@@ -5,6 +5,86 @@ import com.xworkz.tostring.internal.*;
 public class MainRunner {
 
     public static void main(String[] args) {
+
+        AirForce airForce1 = new AirForce("India", 1700, "Air Chief Marshal V. R. Chaudhari");
+        AirForce airForce2=new AirForce("Russia",3456,"Modi");
+        System.out.println(airForce1);
+        System.out.println(airForce2);
+        System.out.println("The Air force are: "+airForce1.equals(airForce2));
+        System.out.println(airForce1.hashCode());
+
+
+        Airplane airplane1 = new Airplane("Air India", 180, true);
+        Airplane airplane2=new Airplane("USA Plane",456,true);
+        System.out.println(airplane1);
+        System.out.println(airplane2);
+        System.out.println("The Instances are:"+airplane1.equals(airplane2));
+        System.out.println(airplane1.hashCode());
+
+        Army army1 = new Army("India", 1200000, "General Manoj Pande");
+        Army army2=new Army("USA",7865,"Kiran Raj");
+        System.out.println(army1);
+        System.out.println(army2);
+        System.out.println(army1.hashCode());
+        System.out.println("The Instance are:"+army1.equals(army2));
+
+
+        AsianPaint asianPaint1 = new AsianPaint("Asian Paints", "Blue", 1200);
+       AsianPaint asianPaint2=new AsianPaint("Paint","Black",456);
+        String paintRepresentation = asianPaint1.toString();
+        System.out.println(paintRepresentation);
+        System.out.println(asianPaint1.hashCode());
+        System.out.println(asianPaint1.equals(asianPaint2));
+
+
+        Asteroid asteroid1 = new Asteroid("Ceres", 939.4, "Carbonaceous");
+        Asteroid asteroid2= new Asteroid("Sirus",456.8,"Stone");
+        System.out.println(asteroid1);
+        System.out.println(asteroid1.hashCode());
+        System.out.println(asteroid1.equals(asteroid2));
+
+
+        Astronaut astronaut1 = new Astronaut("Rakesh Sharma", 1, "ISRO");
+        Astronaut astronaut2= new Astronaut("Sirus",345,"Stone");
+        System.out.println(astronaut1);
+        System.out.println(astronaut1.hashCode());
+        System.out.println(astronaut1.equals(astronaut2));
+
+
+        AutoRickshaw autoRickshaw1 = new AutoRickshaw("Bajaj RE", false, 15);
+        System.out.println(autoRickshaw1);
+        System.out.println(autoRickshaw1.hashCode());
+        AutoRickshaw autoRickshaw2=new AutoRickshaw("Yamaha",true,12);
+        System.out.println(autoRickshaw1.equals(autoRickshaw2));
+
+
+        BergerPaints bergerPaints1 = new BergerPaints("Mint Green", "Satin", 20);
+        System.out.println(bergerPaints1);
+        System.out.println(bergerPaints1.hashCode());
+        BergerPaints bergerPaints2=new BergerPaints("Light Green","satin",6);
+        System.out.println(autoRickshaw1.equals(autoRickshaw2));
+
+
+        Bike bike1 = new Bike("Yamaha", 150, false);
+        System.out.println(bike1);
+        System.out.println(bike1.hashCode());
+        Bike bike2=new Bike("Bajaj",250,true);
+        System.out.println(bike1.equals(bike2));
+
+        Biology biology1 = new Biology("Zoology", true, 25);
+        System.out.println(biology1);
+        System.out.println(biology1.hashCode());
+        Biology biology2=new Biology("Zoology",true,25);
+        System.out.println(biology2);
+
+
+        Biriyani biriyani1 = new Biriyani("Hyderabadi", "Hyderabad", true);
+        System.out.println(biriyani1);
+        System.out.println(biriyani1.hashCode());
+        Biriyani biriyani2=new Biriyani("Hyderabadi","Andra",false);
+
+
+
         Yajamana yajamana=new Yajamana("Darshan",1.75,2.50f);
         String representationOfYajamaString=yajamana.toString();
         System.out.println(representationOfYajamaString);
@@ -18,13 +98,6 @@ public class MainRunner {
 
         int intCat=cat.hashCode();
         System.out.println(intCat);
-
-        AsianPaint asianPaint = new AsianPaint("Asian Paints", "Blue", 1200);
-        String paintRepresentation = asianPaint.toString();
-        System.out.println(paintRepresentation);
-
-        int intPaint=asianPaint.hashCode();
-        System.out.println(intPaint);
 
         Car car = new Car("Swift", "City", 1200000);
         String vehicleRepresentation = car.toString();
@@ -125,13 +198,9 @@ public class MainRunner {
         System.out.println(sun);
         System.out.println(sun.hashCode());
 
-        Asteroid asteroid = new Asteroid("Ceres", 939.4, "Carbonaceous");
-        System.out.println(asteroid);
-        System.out.println(asteroid.hashCode());
 
-        Astronaut astronaut = new Astronaut("Rakesh Sharma", 1, "ISRO");
-        System.out.println(astronaut);
-        System.out.println(astronaut.hashCode());
+
+
 
         Scientist scientist = new Scientist("Dr. C.V. Raman", "Physics", 12);
         System.out.println(scientist);
@@ -141,20 +210,10 @@ public class MainRunner {
         System.out.println(soldier);
         System.out.println(soldier.hashCode());
 
-        Army indianArmy = new Army("India", 1200000, "General Manoj Pande");
-        System.out.println(indianArmy);
-        System.out.println(indianArmy.hashCode());
 
         Navy navy = new Navy("India", 150, "Admiral R. Hari Kumar");
         System.out.println(navy);
         System.out.println(navy.hashCode());
-
-        AirForce airForce1 = new AirForce("India", 1700, "Air Chief Marshal V. R. Chaudhari");
-        AirForce airForce2=new AirForce("Russia",3456,"Modi");
-        System.out.println(airForce1);
-        System.out.println(airForce2);
-        System.out.println("The Air force are: "+airForce1.equals(airForce2));
-        System.out.println(airForce1.hashCode());
 
 
         CoastGuard coastGuard = new CoastGuard("India", 60, "DG Rakesh Pal");
@@ -226,9 +285,7 @@ public class MainRunner {
         System.out.println(producer);
         System.out.println(producer.hashCode());
 
-        Biriyani hyderabadiBiriyani = new Biriyani("Hyderabadi", "Hyderabad", true);
-        System.out.println(hyderabadiBiriyani);
-        System.out.println(hyderabadiBiriyani.hashCode());
+
 
         FishMeals coastalFish = new FishMeals("King Fish", "Mangalore", true);
         System.out.println(coastalFish);
@@ -306,9 +363,7 @@ public class MainRunner {
         System.out.println(chem);
         System.out.println(chem.hashCode());
 
-        Biology bio = new Biology("Zoology", true, 25);
-        System.out.println(bio);
-        System.out.println(bio.hashCode());
+
 
         Economics eco = new Economics("Macroeconomics", true, 8);
         System.out.println(eco);
@@ -334,9 +389,7 @@ public class MainRunner {
         System.out.println(paint);
         System.out.println(paint.hashCode());
 
-        BergerPaints berger = new BergerPaints("Mint Green", "Satin", 20);
-        System.out.println(berger);
-        System.out.println(berger.hashCode());
+
 
         DuluxPaints dulux = new DuluxPaints("Lavender", "Eggshell", 15);
         System.out.println(dulux);
@@ -394,9 +447,7 @@ public class MainRunner {
         System.out.println(vizio);
         System.out.println(vizio.hashCode());
 
-        Bike bike = new Bike("Yamaha", 150, false);
-        System.out.println(bike);
-        System.out.println(bike.hashCode());
+
 
         Truck truck = new Truck("Tata", 10, true);
         System.out.println(truck);
@@ -406,9 +457,7 @@ public class MainRunner {
         System.out.println(bus);
         System.out.println(bus.hashCode());
 
-        AutoRickshaw auto = new AutoRickshaw("Bajaj RE", false, 15);
-        System.out.println(auto);
-        System.out.println(auto.hashCode());
+
 
         Scooter scooter = new Scooter("Ather", true, 80);
         System.out.println(scooter);
@@ -418,12 +467,6 @@ public class MainRunner {
         System.out.println(tractor);
         System.out.println(tractor.hashCode());
 
-        Airplane airplane1 = new Airplane("Air India", 180, true);
-        Airplane airplane2=new Airplane("USA Plane",456,true);
-        System.out.println(airplane1);
-        System.out.println(airplane2);
-        System.out.println("The Instances are:"+airplane1.equals(airplane2));
-        System.out.println(airplane1.hashCode());
 
         Boat boat = new Boat("Motorboat", 6, true);
         System.out.println(boat);
