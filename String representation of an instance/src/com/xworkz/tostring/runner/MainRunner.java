@@ -257,215 +257,189 @@ public class MainRunner {
      int intNgo=helpingHands1.hashCode();
      System.out.println(intNgo);
 
+        Hero hero1 = new Hero("Yash", 38, "Jambada Hudugi", "Rocky Bhai in KGF");
+        System.out.println(hero1);
+        System.out.println(hero1.hashCode());
+        Hero hero2 = new Hero("Yash", 38, "Jambada Hudugi", "Rocky Bhai in KGF");
+        System.out.println(hero1.equals(hero2));
 
+        Heroine heroine1 = new Heroine("Rashmika Mandanna", 28, "Kirik Party", "Srivalli in Pushpa");
+        System.out.println(heroine1);
+        System.out.println(heroine1.hashCode());
+        Heroine heroine2 = new Heroine("Rashmika Mandanna", 28, "Kirik Party", "Srivalli in Pushpa");
+        System.out.println(heroine1.equals(heroine2));
 
+        History history1 = new History("Medieval India", "Shivaji", false);
+        System.out.println(history1);
+        System.out.println(history1.hashCode());
+        History history2 = new History("Medieval India", "Shivaji", false);
+        System.out.println(history1.equals(history2));
 
+        IndigoPaints indigoPaints1 = new IndigoPaints("Ocean Blue", "Glossy", 5);
+        System.out.println(indigoPaints1);
+        System.out.println(indigoPaints1.hashCode());
+        IndigoPaints indigoPaints2 = new IndigoPaints("Ocean Blue", "Glossy", 5);
+        System.out.println(indigoPaints1.equals(indigoPaints2));
 
+        ITIndustry itIndustry1 = new ITIndustry("Infosys", "Bangalore", 250000);
+        System.out.println(itIndustry1);
+        System.out.println(itIndustry1.hashCode());
+        ITIndustry itIndustry2 = new ITIndustry("Infosys", "Bangalore", 250000);
+        System.out.println(itIndustry1.equals(itIndustry2));
 
+        Jaguar jaguar1 = new Jaguar("Amazon Rainforest", true, 1500);
+        System.out.println(jaguar1);
+        System.out.println(jaguar1.hashCode());
+        Jaguar jaguar2 = new Jaguar("Amazon Rainforest", true, 1500);
+        System.out.println(jaguar1.equals(jaguar2));
 
+        Java java1 = new Java("Java Programming", "Mr. Ravi Kumar", 8);
+        System.out.println(java1);
+        System.out.println(java1.hashCode());
+        Java java2 = new Java("Java Programming", "Mr. Ravi Kumar", 8);
+        System.out.println(java1.equals(java2));
 
+        JSWPaints jswPaints1 = new JSWPaints("Terracotta", "Matte", 10);
+        System.out.println(jswPaints1);
+        System.out.println(jswPaints1.hashCode());
+        JSWPaints jswPaints2 = new JSWPaints("Terracotta", "Matte", 10);
+        System.out.println(jswPaints1.equals(jswPaints2));
 
+        KansaiNerolac kansaiNerolac1 = new KansaiNerolac("Peach", "Satin", 4);
+        System.out.println(kansaiNerolac1);
+        System.out.println(kansaiNerolac1.hashCode());
+        KansaiNerolac kansaiNerolac2 = new KansaiNerolac("Peach", "Satin", 4);
+        System.out.println(kansaiNerolac1.equals(kansaiNerolac2));
 
+        Leopard leopard1 = new Leopard("Forests & Hills", true, "Rosette-shaped");
+        System.out.println(leopard1);
+        System.out.println(leopard1.hashCode());
+        Leopard leopard2 = new Leopard("Forests & Hills", true, "Rosette-shaped");
+        System.out.println(leopard1.equals(leopard2));
 
-
-
-
-
-        Lion animal = new Lion("Lion", "Forest", 15);
-        String animalRepresentation = animal.toString();
-        System.out.println(animalRepresentation);
-
-        int intAnimal=car.hashCode();
-        System.out.println(intAnimal);
-
-
-
-        LG tv = new LG("LG", "LED", 38000);
-        String tvRepresentation = tv.toString();
+        LG lgtv1 = new LG("LG", "LED", 38000);
+        String tvRepresentation = lgtv1.toString();
         System.out.println(tvRepresentation);
-
-        int intTv=car.hashCode();
+        int intTv=lgtv1.hashCode();
         System.out.println(intTv);
-
-
-
-
-
-        Java course = new Java("Java Programming", "Mr. Ravi Kumar", 8);
-        System.out.println(course);
-        System.out.println(course.hashCode());
-
-        Maths maths = new Maths("Mathematics", "Mrs. Kavya", 12);
-        System.out.println(maths);
-        System.out.println(maths.hashCode());
-
-
-        MahaBharatha mahabharatha = new MahaBharatha("Vyasa", "Lord Krishna", 100000);
-        System.out.println(mahabharatha);
-        System.out.println(mahabharatha.hashCode());
-
-        ITIndustry itIndustry = new ITIndustry("Infosys", "Bangalore", 250000);
-        System.out.println(itIndustry);
-        System.out.println(itIndustry.hashCode());
-
-
-
-        Mystery mystery = new Mystery("The Hidden Key", "Agatha Roy", 20);
-        System.out.println(mystery);
-        System.out.println(mystery.hashCode());
-        Planet earth = new Planet("Earth", 5.972e24, true);
-        System.out.println(earth);
-        System.out.println(earth.hashCode());
-
-
-        Poetry poetry = new Poetry("Whispers of the Wind", "Maya Sen", "Free Verse");
-        System.out.println(poetry);
-        System.out.println(poetry.hashCode());
-
-
-
-
-
-
-
-
-        Military soldier = new Military("Arjun Singh", "Captain", "Indian Army - Infantry");
-        System.out.println(soldier);
-        System.out.println(soldier.hashCode());
-
-
-        Navy navy = new Navy("India", 150, "Admiral R. Hari Kumar");
-        System.out.println(navy);
-        System.out.println(navy.hashCode());
-
-
-
-
-
-
-        Parvathi parvathi = new Parvathi("Parvati", "Shiva", "Shakti", "Lion or Tiger");
-        System.out.println(parvathi);
-        System.out.println(parvathi.hashCode());
-
-
-
-
-        Hero hero = new Hero("Yash", 38, "Jambada Hudugi", "Rocky Bhai in KGF");
-        System.out.println(hero);
-        System.out.println(hero.hashCode());
-
-        Heroine heroine = new Heroine("Rashmika Mandanna", 28, "Kirik Party", "Srivalli in Pushpa");
-        System.out.println(heroine);
-        System.out.println(heroine.hashCode());
-
-
-
-
-
-
-        Musician musician = new Musician("Devi Sri Prasad", 44, "Music Composition & Singing", "Pushpa: The Rise");
-        System.out.println(musician);
-        System.out.println(musician.hashCode());
-
-
-
-
-        Producer producer = new Producer("Vijay Kiragandur", 50, "Hombale Films", "KGF Chapter 2");
-        System.out.println(producer);
-        System.out.println(producer.hashCode());
-
-
-
-
-
-
-     Palav vegPalav = new Palav("Karnataka Style", "Basmati Rice", true);
-        System.out.println(vegPalav);
-        System.out.println(vegPalav.hashCode());
-
-
-
-        Ox hallikarOx = new Ox("Hallikar", "Gray", true);
-        System.out.println(hallikarOx);
-        System.out.println(hallikarOx.hashCode());
-
-
-
-
-        Leopard indianLeopard = new Leopard("Forests & Hills", true, "Rosette-shaped");
-        System.out.println(indianLeopard);
-        System.out.println(indianLeopard.hashCode());
-
-
-
-        Jaguar amazonJaguar = new Jaguar("Amazon Rainforest", true, 1500);
-        System.out.println(amazonJaguar);
-        System.out.println(amazonJaguar.hashCode());
-
-        History indianHistory = new History("Medieval India", "Shivaji", false);
-        System.out.println(indianHistory);
-        System.out.println(indianHistory.hashCode());
-
-
-
-
-
-
-        NipponPaint paint = new NipponPaint("Sky Blue", "Matte", 10);
-        System.out.println(paint);
-        System.out.println(paint.hashCode());
-
-
-
-
-
-        IndigoPaints indigo = new IndigoPaints("Ocean Blue", "Glossy", 5);
-        System.out.println(indigo);
-        System.out.println(indigo.hashCode());
-
-        JSWPaints jsw = new JSWPaints("Terracotta", "Matte", 10);
-        System.out.println(jsw);
-        System.out.println(jsw.hashCode());
-
-
-
-        KansaiNerolac kansai = new KansaiNerolac("Peach", "Satin", 4);
-        System.out.println(kansai);
-        System.out.println(kansai.hashCode());
-
-
-
-
-
-
-
-        PanasonicTV panasonic = new PanasonicTV(49, true, "4K UHD");
-        System.out.println(panasonic);
-        System.out.println(panasonic.hashCode());
-
-
-
-        OnePlusTV oneplus = new OnePlusTV(65, true, "4K QLED");
-        System.out.println(oneplus);
-        System.out.println(oneplus.hashCode());
-
-        Python indianRockPython = new Python("Indian Rock Python", 5.2, false);
-        System.out.println(indianRockPython);
-        System.out.println(indianRockPython.hashCode());
-
-
-
-
-
-
-        PoliticalScience politics = new PoliticalScience("Democracy", true, 6);
-        System.out.println(politics);
-        System.out.println(politics.hashCode());
-
-
-        Physics physics = new Physics("Mechanics", true, 15);
-        System.out.println(physics);
-        System.out.println(physics.hashCode());
+        LG lgtv2 = new LG("LG", "LED", 38000);
+        System.out.println(lgtv1.equals(lgtv2));
+
+        Lion lion1 = new Lion("Lion", "Forest", 15);
+        String animalRepresentation = lion1.toString();
+        System.out.println(animalRepresentation);
+        int intAnimal=lion1.hashCode();
+        System.out.println(intAnimal);
+        Lion lion2 = new Lion("Lion", "Forest", 15);
+        System.out.println(lion1.equals(lion2));
+
+        MahaBharatha mahabharatha1= new MahaBharatha("Vyasa", "Lord Krishna", 100000);
+        System.out.println(mahabharatha1);
+        System.out.println(mahabharatha1.hashCode());
+        MahaBharatha mahabharatha2= new MahaBharatha("Vyasa", "Lord Krishna", 100000);
+        System.out.println(mahabharatha1.equals(mahabharatha2));
+
+        Maths maths1 = new Maths("Mathematics", "Mrs. Kavya", 12);
+        System.out.println(maths1);
+        System.out.println(maths1.hashCode());
+        Maths maths2= new Maths("Mathematics", "Mrs. Kavya", 12);
+        System.out.println(maths1.equals(maths2));
+
+        Military military1 = new Military("Arjun Singh", "Captain", "Indian Army - Infantry");
+        System.out.println(military1);
+        System.out.println(military1.hashCode());
+        Military military2 = new Military("Arjun Singh", "Captain", "Indian Army - Infantry");
+        System.out.println(military1.equals(military2));
+
+        Musician musician1 = new Musician("Devi Sri Prasad", 44, "Music Composition & Singing", "Pushpa: The Rise");
+        System.out.println(musician1);
+        System.out.println(musician1.hashCode());
+        Musician musician2 = new Musician("Devi Sri Prasad", 44, "Music Composition & Singing", "Pushpa: The Rise");
+        System.out.println(musician1.equals(musician2));
+
+        Mystery mystery1 = new Mystery("The Hidden Key", "Agatha Roy", 20);
+        System.out.println(mystery1);
+        System.out.println(mystery1.hashCode());
+        Mystery mystery2 = new Mystery("The Hidden Key", "Agatha Roy", 20);
+        System.out.println(mystery1.equals(mystery2));
+
+        Navy navy1 = new Navy("India", 150, "Admiral R. Hari Kumar");
+        System.out.println(navy1);
+        System.out.println(navy1.hashCode());
+        Navy navy2 = new Navy("India", 150, "Admiral R. Hari Kumar");
+        System.out.println(navy1.equals(navy2));
+
+        NipponPaint nipponPaint1 = new NipponPaint("Sky Blue", "Matte", 10);
+        System.out.println(nipponPaint1);
+        System.out.println(nipponPaint1.hashCode());
+        NipponPaint nipponPaint2 = new NipponPaint("Sky Blue", "Matte", 10);
+        System.out.println(nipponPaint1.equals(nipponPaint2));
+
+        OnePlusTV onePlusTV1 = new OnePlusTV(65, true, "4K QLED");
+        System.out.println(onePlusTV1);
+        System.out.println(onePlusTV1.hashCode());
+        OnePlusTV onePlusTV2 = new OnePlusTV(65, true, "4K QLED");
+        System.out.println(onePlusTV1.equals(onePlusTV2));
+
+        Ox ox1 = new Ox("Hallikar", "Gray", true);
+        System.out.println(ox1);
+        System.out.println(ox1.hashCode());
+        Ox ox2 = new Ox("Hallikar", "Gray", true);
+        System.out.println(ox1.equals(ox2));
+
+        Palav palav1 = new Palav("Karnataka Style", "Basmati Rice", true);
+        System.out.println(palav1);
+        System.out.println(palav1.hashCode());
+        Palav palav2 = new Palav("Karnataka Style", "Basmati Rice", true);
+        System.out.println(palav1.equals(palav2));
+
+        PanasonicTV panasonicTV1= new PanasonicTV(49, true, "4K UHD");
+        System.out.println(panasonicTV1);
+        System.out.println(panasonicTV1.hashCode());
+        PanasonicTV panasonicTV2= new PanasonicTV(49, true, "4K UHD");
+        System.out.println(panasonicTV1.equals(panasonicTV2));
+
+        Parvathi parvathi1 = new Parvathi("Parvati", "Shiva", "Shakti", "Lion or Tiger");
+        System.out.println(parvathi1);
+        System.out.println(parvathi1.hashCode());
+        Parvathi parvathi2 = new Parvathi("Parvati", "Shiva", "Shakti", "Lion or Tiger");
+        System.out.println(parvathi1.equals(parvathi2));
+
+        Physics physics1 = new Physics("Mechanics", true, 15);
+        System.out.println(physics1);
+        System.out.println(physics1.hashCode());
+        Physics physics2 = new Physics("Mechanics", true, 15);
+        System.out.println(physics1.equals(physics2));
+
+        Planet planet1 = new Planet("Earth", 5.972e24, true);
+        System.out.println(planet1);
+        System.out.println(planet1.hashCode());
+        Planet planet2 = new Planet("Earth", 5.972e24, true);
+        System.out.println(planet1.equals(planet2));
+
+        Poetry poetry1 = new Poetry("Whispers of the Wind", "Maya Sen", "Free Verse");
+        System.out.println(poetry1);
+        System.out.println(poetry1.hashCode());
+        Poetry poetry2= new Poetry("Whispers of the Wind", "Maya Sen", "Free Verse");
+        System.out.println(poetry1.equals(poetry2));
+
+        PoliticalScience politicalScience1 = new PoliticalScience("Democracy", true, 6);
+        System.out.println(politicalScience1);
+        System.out.println(politicalScience1.hashCode());
+        PoliticalScience politicalScience2 = new PoliticalScience("Democracy", true, 6);
+        System.out.println(politicalScience1.equals(politicalScience2));
+
+        Producer producer1 = new Producer("Vijay Kiragandur", 50, "Hombale Films", "KGF Chapter 2");
+        System.out.println(producer1);
+        System.out.println(producer1.hashCode());
+        Producer producer2 = new Producer("Vijay Kiragandur", 50, "Hombale Films", "KGF Chapter 2");
+        System.out.println(producer1.equals(producer2));
+
+        Python python1 = new Python("Indian Rock Python", 5.2, false);
+        System.out.println(python1);
+        System.out.println(python1.hashCode());
+        Python python2 = new Python("Indian Rock Python", 5.2, false);
+        System.out.println(python1.equals(python2));
 
         Raccoon raccoon1 = new Raccoon(true, true, "Fruits & Nuts");
         System.out.println(raccoon1);

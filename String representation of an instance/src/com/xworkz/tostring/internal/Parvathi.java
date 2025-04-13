@@ -27,10 +27,10 @@ public class Parvathi extends God {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is Parvathi");
+            Parvathi parvathi1 = this;
+            Parvathi parvathi2 = (Parvathi) obj;
+            if (parvathi1.name == parvathi2.name && parvathi1.consort == parvathi2.consort ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

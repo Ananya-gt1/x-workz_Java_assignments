@@ -25,10 +25,10 @@ public class Maths extends Subject {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is Maths");
+            Maths maths1 = this;
+            Maths maths2 = (Maths) obj;
+            if (maths1.subjectName == maths2.subjectName && maths1.teacher == maths2.teacher ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

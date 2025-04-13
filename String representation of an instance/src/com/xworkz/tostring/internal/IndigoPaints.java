@@ -27,10 +27,10 @@ public class IndigoPaints extends PaintBrand {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is IndigoPaints");
+            IndigoPaints indigoPaints1 = this;
+            IndigoPaints indigoPaints2 = (IndigoPaints) obj;
+            if (indigoPaints1.color == indigoPaints2.color && indigoPaints1.finishType == indigoPaints2.finishType ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

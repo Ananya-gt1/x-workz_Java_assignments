@@ -27,10 +27,10 @@ public class Physics extends Subject {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is Physics");
+            Physics physics1 = this;
+            Physics physics2 = (Physics) obj;
+            if (physics1.branch == physics2.branch && physics1.requiresLab == physics2.requiresLab ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

@@ -29,10 +29,10 @@ public class LG extends Television {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is LG");
+            LG lgtv1 = this;
+            LG lgtv2 = (LG) obj;
+            if (lgtv1.brand == lgtv2.brand && lgtv1.price == lgtv2.price ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

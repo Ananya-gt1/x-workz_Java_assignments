@@ -27,10 +27,10 @@ public class KansaiNerolac extends PaintBrand {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is KansaiNerolac");
+            KansaiNerolac kansaiNerolac1 = this;
+            KansaiNerolac kansaiNerolac2 = (KansaiNerolac) obj;
+            if (kansaiNerolac1.color == kansaiNerolac2.color && kansaiNerolac1.finishType == kansaiNerolac2.finishType ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

@@ -27,10 +27,10 @@ public class JSWPaints extends PaintBrand {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is JSWPaints");
+            JSWPaints jswPaints1 = this;
+            JSWPaints jswPaints2 = (JSWPaints) obj;
+            if (jswPaints1.color == jswPaints2.color && jswPaints1.finishType == jswPaints2.finishType ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

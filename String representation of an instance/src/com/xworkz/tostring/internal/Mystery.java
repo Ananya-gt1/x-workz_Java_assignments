@@ -25,10 +25,10 @@ public class Mystery extends Story {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is Mystery");
+            Mystery mystery1 = this;
+            Mystery mystery2 = (Mystery) obj;
+            if (mystery1.author == mystery2.author&& mystery1.numberOfChapters == mystery2.numberOfChapters ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

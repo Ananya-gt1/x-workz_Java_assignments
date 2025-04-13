@@ -27,10 +27,10 @@ public class PoliticalScience extends Subject {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is PoliticalScience");
+            PoliticalScience politicalScience1 = this;
+            PoliticalScience politicalScience2 = (PoliticalScience) obj;
+            if (politicalScience1.includesConstitutionStudy == politicalScience2.includesConstitutionStudy && politicalScience1.includesConstitutionStudy == politicalScience2.includesConstitutionStudy ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

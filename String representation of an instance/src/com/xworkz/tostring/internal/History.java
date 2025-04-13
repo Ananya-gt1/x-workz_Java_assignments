@@ -27,10 +27,10 @@ public class History extends Subject {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is History");
+            History history1 = this;
+            History history2 = (History) obj;
+            if (history1.eraCovered == history2.eraCovered && history1.isAncientHistory == history2.isAncientHistory ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

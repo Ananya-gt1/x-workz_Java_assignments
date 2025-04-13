@@ -27,10 +27,10 @@ public class NipponPaint extends PaintBrand {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is NipponPaint");
+            NipponPaint nipponPaint1 = this;
+            NipponPaint nipponPaint2 = (NipponPaint) obj;
+            if (nipponPaint1.color == nipponPaint2.color && nipponPaint1.finishType == nipponPaint2.finishType ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

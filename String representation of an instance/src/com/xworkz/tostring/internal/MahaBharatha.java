@@ -25,10 +25,10 @@ public class MahaBharatha extends Epic {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is MahaBharatha");
+            MahaBharatha mahaBharatha1 = this;
+            MahaBharatha mahaBharatha2 = (MahaBharatha) obj;
+            if (mahaBharatha1.author == mahaBharatha2.author && mahaBharatha1.mainCharacter == mahaBharatha2.mainCharacter ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

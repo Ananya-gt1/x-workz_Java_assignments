@@ -25,10 +25,10 @@ public class Planet extends CelestialBody {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is Planet");
+            Planet planet1 = this;
+            Planet planet2 = (Planet) obj;
+            if (planet1.name == planet2.name && planet1.mass == planet2.mass ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

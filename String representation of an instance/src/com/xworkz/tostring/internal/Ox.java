@@ -25,10 +25,10 @@ public class Ox extends Animal {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is Ox");
+            Ox ox1 = this;
+            Ox ox2 = (Ox) obj;
+            if (ox1.breed == ox2.breed && ox1.color == ox2.color) {
                 System.out.println("The objects are same.....");
                 return true;
             }

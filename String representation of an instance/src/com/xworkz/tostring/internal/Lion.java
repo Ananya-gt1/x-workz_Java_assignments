@@ -29,10 +29,10 @@ public class Lion extends WildAnimal {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is Lion");
+            Lion lion1 = this;
+            Lion lion2 = (Lion) obj;
+            if (lion1.name == lion2.name && lion1.habitat == lion2.habitat ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

@@ -25,10 +25,10 @@ public class PanasonicTV extends Television {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is PanasonicTV");
+            PanasonicTV panasonicTV1 = this;
+            PanasonicTV panasonicTV2 = (PanasonicTV) obj;
+            if (panasonicTV1.screenSize == panasonicTV2.screenSize && panasonicTV1.isSmartTV == panasonicTV2.isSmartTV ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

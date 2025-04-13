@@ -25,10 +25,10 @@ public class Java extends Course {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is Java");
+            Java java1 = this;
+            Java java2 = (Java) obj;
+            if (java1.courseName == java2.courseName && java1.instructor == java2.instructor ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

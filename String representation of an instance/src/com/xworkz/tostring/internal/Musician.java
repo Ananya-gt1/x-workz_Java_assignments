@@ -25,10 +25,10 @@ public class Musician {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is Musician");
+            Musician musician1 = this;
+            Musician musician2 = (Musician) obj;
+            if (musician1.name == musician2.name && musician1.age == musician2.age ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

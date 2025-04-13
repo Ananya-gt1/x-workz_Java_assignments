@@ -25,10 +25,10 @@ public class Producer {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is Producer");
+            Producer producer1 = this;
+            Producer producer2 = (Producer) obj;
+            if (producer1.name == producer2.name && producer1.age == producer2.age ) {
                 System.out.println("The objects are same.....");
                 return true;
             }

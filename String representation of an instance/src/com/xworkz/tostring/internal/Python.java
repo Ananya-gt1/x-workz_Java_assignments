@@ -25,10 +25,10 @@ public class Python extends Animal {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Hero");
-            Hero hero1 = this;
-            Hero hero2 = (Hero) obj;
-            if (hero1.name == hero2.name && hero1.age == hero2.age ) {
+            System.out.println("The reference is Python");
+            Python python1 = this;
+            Python python2 = (Python) obj;
+            if (python1.species == python2.species&& python1.length == python2.length ) {
                 System.out.println("The objects are same.....");
                 return true;
             }
