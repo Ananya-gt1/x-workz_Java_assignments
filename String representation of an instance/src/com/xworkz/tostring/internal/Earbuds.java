@@ -1,6 +1,8 @@
 package com.xworkz.tostring.internal;
 
-public class Earbuds {
+import com.xworkz.tostring.external.Electronics;
+
+public class Earbuds extends Electronics {
     private String name;
     private String brand;
     private int price;
@@ -29,11 +31,11 @@ public class Earbuds {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Earbuds");
+            Earbuds earbuds1 = this;
+            Earbuds earbuds2 = (Earbuds) obj;
+            if (earbuds1.name == earbuds2.name && earbuds1.brand == earbuds2.brand && earbuds1.price == earbuds2.price) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

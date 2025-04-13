@@ -25,11 +25,11 @@ public class CoastGuard extends DefenseForce {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is CoastGuard");
+            CoastGuard coastGuard1 = this;
+            CoastGuard coastGuard2 = (CoastGuard) obj;
+            if (coastGuard1.country == coastGuard2.country && coastGuard1.patrolBoats == coastGuard2.patrolBoats && coastGuard1.directorGeneral == coastGuard2.directorGeneral) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

@@ -25,11 +25,11 @@ public class Director {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Director");
+            Director director1 = this;
+            Director director2 = (Director) obj;
+            if (director1.name == director2.name && director1.age == director2.age && director1.directingStyle == director2.directingStyle) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

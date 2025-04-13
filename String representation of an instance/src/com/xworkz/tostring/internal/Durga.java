@@ -27,11 +27,11 @@ public class Durga extends God {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Durga");
+            Durga durga1 = this;
+            Durga durga2 = (Durga) obj;
+            if (durga1.name == durga2.name && durga1.weapon == durga2.weapon && durga1.vehicle == durga2.vehicle) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

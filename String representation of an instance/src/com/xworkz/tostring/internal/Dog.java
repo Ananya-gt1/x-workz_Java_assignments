@@ -25,11 +25,11 @@ public class Dog extends Animal {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Dog");
+            Dog dog1 = this;
+            Dog dog2 = (Dog) obj;
+            if (dog1.breed == dog2.breed && dog1.color == dog2.color && dog1.age == dog2.age) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

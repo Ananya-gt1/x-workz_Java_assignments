@@ -27,11 +27,11 @@ public class DuluxPaints extends PaintBrand {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is DuluxPaints");
+            DuluxPaints duluxPaints1 = this;
+            DuluxPaints duluxPaints2 = (DuluxPaints) obj;
+            if (duluxPaints1.color == duluxPaints2.color && duluxPaints1.finishType == duluxPaints2.finishType && duluxPaints1.quantityInLiters == duluxPaints2.quantityInLiters) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

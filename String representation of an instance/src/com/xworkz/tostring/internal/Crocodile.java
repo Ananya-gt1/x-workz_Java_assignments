@@ -25,11 +25,11 @@ public class Crocodile extends WildAnimal {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Crocodile");
+            Crocodile crocodile1 = this;
+            Crocodile crocodile2 = (Crocodile) obj;
+            if (crocodile1.waterType == crocodile2.waterType && crocodile1.length == crocodile2.length && crocodile1.isAggressive == crocodile2.isAggressive) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

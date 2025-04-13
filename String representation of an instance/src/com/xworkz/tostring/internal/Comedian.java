@@ -25,11 +25,11 @@ public class Comedian {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Comedian");
+            Comedian comedian1 = this;
+            Comedian comedian2 = (Comedian) obj;
+            if (comedian1.name == comedian2.name && comedian1.age == comedian2.age && comedian1.signatureStyle == comedian2.signatureStyle) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }
