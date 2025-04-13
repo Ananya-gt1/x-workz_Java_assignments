@@ -27,11 +27,11 @@ public class Brahma extends God {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Brahma");
+            Brahma brahma1 = this;
+            Brahma brahma2 = (Brahma) obj;
+            if (brahma1.name == brahma2.name && brahma1.numberOfHeads == brahma2.numberOfHeads && brahma1.consort == brahma2.consort) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

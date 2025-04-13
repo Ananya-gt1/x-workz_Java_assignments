@@ -25,11 +25,11 @@ public class Bus extends Vehicle {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Bus");
+            Bus bus1 = this;
+            Bus bus2 = (Bus) obj;
+            if (bus1.operator == bus2.operator && bus1.seatingCapacity == bus2.seatingCapacity && bus1.isAC == bus2.isAC) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

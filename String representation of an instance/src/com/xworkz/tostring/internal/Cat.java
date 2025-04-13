@@ -31,11 +31,11 @@ public class Cat extends Animal {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Cat");
+            Cat cat1 = this;
+            Cat cat2 = (Cat) obj;
+            if (cat1.name == cat2.name && cat1.color == cat2.color && cat1.price == cat2.price) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

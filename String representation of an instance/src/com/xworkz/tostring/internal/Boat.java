@@ -25,11 +25,11 @@ public class Boat extends Vehicle {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Boat");
+            Boat boat1 = this;
+            Boat boat2 = (Boat) obj;
+            if (boat1.type == boat2.type && boat1.capacity == boat2.capacity && boat1.isMotorized == boat2.isMotorized) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

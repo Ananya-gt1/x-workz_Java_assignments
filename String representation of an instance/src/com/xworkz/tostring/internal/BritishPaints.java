@@ -26,12 +26,12 @@ public class BritishPaints extends PaintBrand {
     }
     @Override
     public boolean equals(Object obj) {
-        if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+        if (obj != null) {
+            System.out.println("The reference is British paints");
+            BritishPaints britishPaints1 = this;
+            BritishPaints britishPaints2 = (BritishPaints) obj;
+            if (britishPaints1.color == britishPaints2.color && britishPaints1.finishType == britishPaints2.finishType && britishPaints1.quantityInLiters == britishPaints2.quantityInLiters) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

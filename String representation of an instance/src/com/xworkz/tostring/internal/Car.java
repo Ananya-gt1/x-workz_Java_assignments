@@ -29,11 +29,11 @@ public class Car extends Vehicle {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Car");
+            Car car1 = this;
+            Car car2 = (Car) obj;
+            if (car1.brand == car2.brand && car1.model == car2.model && car1.price == car2.price) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

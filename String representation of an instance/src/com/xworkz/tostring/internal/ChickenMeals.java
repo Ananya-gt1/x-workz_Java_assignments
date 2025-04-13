@@ -25,11 +25,11 @@ public class ChickenMeals extends IndianFood {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Chicken meals");
+            ChickenMeals chickenMeals1 = this;
+            ChickenMeals chickenMeals2 = (ChickenMeals) obj;
+            if (chickenMeals1.dishName == chickenMeals2.dishName && chickenMeals1.style == chickenMeals2.style && chickenMeals1.isBoneless == chickenMeals2.isBoneless) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

@@ -25,11 +25,11 @@ public class Cheetah extends WildAnimal {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Cheetah");
+            Cheetah cheetah1 = this;
+            Cheetah cheetah2 = (Cheetah) obj;
+            if (cheetah1.topSpeed == cheetah2.topSpeed && cheetah1.continent == cheetah2.continent && cheetah1.isSpotted == cheetah2.isSpotted) {
+                System.out.println("The objects  are same.....");
                 return true;
             }
         }

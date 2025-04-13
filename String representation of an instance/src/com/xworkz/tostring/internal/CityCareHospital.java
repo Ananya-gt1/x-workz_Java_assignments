@@ -29,11 +29,11 @@ public class CityCareHospital extends Hospital {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Hospital");
+            CityCareHospital cityCareHospital1 = this;
+            CityCareHospital cityCareHospital2 = (CityCareHospital) obj;
+            if (cityCareHospital1.name == cityCareHospital2.name && cityCareHospital1.location == cityCareHospital2.location && cityCareHospital1.numberOfBeds == cityCareHospital2.numberOfBeds) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

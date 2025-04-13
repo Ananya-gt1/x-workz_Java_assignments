@@ -27,11 +27,11 @@ public class Chemistry extends Subject {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Chemistry");
+            Chemistry chemistry1 = this;
+            Chemistry chemistry2 = (Chemistry) obj;
+            if (chemistry1.branch == chemistry2.branch && chemistry1.isLabRequired == chemistry2.isLabRequired && chemistry1.numberOfChapters == chemistry2.numberOfChapters) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }
