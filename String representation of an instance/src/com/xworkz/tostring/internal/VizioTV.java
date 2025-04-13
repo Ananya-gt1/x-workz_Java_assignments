@@ -22,4 +22,17 @@ public class VizioTV extends Television {
         System.out.println("Original code:"+super.hashCode());
         return 13;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is VizioTV");
+            VizioTV vizioTV1 = this;
+            VizioTV vizioTV2 = (VizioTV) obj;
+            if (vizioTV1.screenSize == vizioTV2.screenSize ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

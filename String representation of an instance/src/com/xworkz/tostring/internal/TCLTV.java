@@ -22,4 +22,17 @@ public class TCLTV extends Television {
         System.out.println("Original code:"+super.hashCode());
         return 20;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is TCLTV");
+            TCLTV tcltv1 = this;
+            TCLTV tcltv2 = (TCLTV) obj;
+            if (tcltv1.isSmartTV== tcltv2.isSmartTV ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

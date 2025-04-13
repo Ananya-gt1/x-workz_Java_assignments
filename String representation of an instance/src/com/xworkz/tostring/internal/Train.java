@@ -22,4 +22,17 @@ public class Train extends Vehicle {
         System.out.println("Original code:"+super.hashCode());
         return 16;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Train");
+            Train train1 = this;
+            Train train2 = (Train) obj;
+            if (train1.coaches == train2.coaches ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -24,4 +24,17 @@ public class Shiva extends God {
         System.out.println("Original code:"+super.hashCode());
         return 31;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Shiva");
+            Shiva shiva1 = this;
+            Shiva shiva2 = (Shiva) obj;
+            if (shiva1.name == shiva2.name ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

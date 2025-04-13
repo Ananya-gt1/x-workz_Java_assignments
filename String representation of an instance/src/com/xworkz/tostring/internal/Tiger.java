@@ -22,4 +22,17 @@ public class Tiger extends WildAnimal {
         System.out.println("Original code:"+super.hashCode());
         return 18;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Tiger");
+            Tiger tiger1 = this;
+            Tiger tiger2 = (Tiger) obj;
+            if (tiger1.species == tiger2.species) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

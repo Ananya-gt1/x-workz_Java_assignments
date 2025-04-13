@@ -24,4 +24,17 @@ public class ShalimarPaints extends PaintBrand {
         System.out.println("Original code:"+super.hashCode());
         return 32;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is ShalimarPaints");
+            ShalimarPaints shalimarPaints1 = this;
+            ShalimarPaints shalimarPaints2 = (ShalimarPaints) obj;
+            if (shalimarPaints1.color == shalimarPaints2.color ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

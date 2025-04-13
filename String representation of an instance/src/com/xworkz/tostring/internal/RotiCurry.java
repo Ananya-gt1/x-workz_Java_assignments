@@ -22,4 +22,17 @@ public class RotiCurry extends IndianFood {
         System.out.println("Original code:"+super.hashCode());
         return 36;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is RotiCurry");
+            RotiCurry rotiCurry1 = this;
+            RotiCurry rotiCurry2 = (RotiCurry) obj;
+            if (rotiCurry1.curryType == rotiCurry2.curryType) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -25,11 +25,11 @@ public class FishMeals extends IndianFood {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is FishMeals");
+            FishMeals fishMeals1 = this;
+            FishMeals fishMeals2 = (FishMeals) obj;
+            if (fishMeals1.fishType == fishMeals2.fishType && fishMeals1.region == fishMeals2.region && fishMeals1.isFried == fishMeals2.isFried) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

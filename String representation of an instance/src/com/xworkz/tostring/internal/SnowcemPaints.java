@@ -24,4 +24,17 @@ public class SnowcemPaints extends PaintBrand {
         System.out.println("Original code:"+super.hashCode());
         return 25;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is SnowcemPaints");
+            SnowcemPaints snowcemPaints1 = this;
+            SnowcemPaints snowcemPaints2 = (SnowcemPaints) obj;
+            if (snowcemPaints1.color == snowcemPaints2.color ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

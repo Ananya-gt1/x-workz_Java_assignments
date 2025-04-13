@@ -22,4 +22,17 @@ public class SonyTV extends Television {
         System.out.println("Original code:"+super.hashCode());
         return 24;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is SonyTV");
+            SonyTV sonyTV1 = this;
+            SonyTV sonyTV2 = (SonyTV) obj;
+            if (sonyTV1.screenSize == sonyTV2.screenSize ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

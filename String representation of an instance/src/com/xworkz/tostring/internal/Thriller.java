@@ -22,4 +22,17 @@ public class Thriller extends Story {
         System.out.println("Original code:"+super.hashCode());
         return 19;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Thriller");
+            Thriller thriller1 = this;
+            Thriller thriller2= (Thriller) obj;
+            if (thriller1.title == thriller2.title ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

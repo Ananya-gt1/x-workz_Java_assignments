@@ -27,11 +27,11 @@ public class Geography extends Subject {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Geography");
+            Geography geography1 = this;
+            Geography geography2 = (Geography) obj;
+            if (geography1.focusArea == geography2.focusArea && geography1.includesMapStudy == geography2.includesMapStudy && geography1.numberOfChapters == geography2.numberOfChapters) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

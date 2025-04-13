@@ -25,11 +25,11 @@ public class FightMaster {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Fight Master");
+            FightMaster fightMaster1 = this;
+            FightMaster fightMaster2 = (FightMaster) obj;
+            if (fightMaster1.name == fightMaster2.name && fightMaster1.age == fightMaster2.age && fightMaster1.fightStyle == fightMaster2.fightStyle) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

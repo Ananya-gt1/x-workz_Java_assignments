@@ -22,4 +22,17 @@ public class Stuntman {
         System.out.println("Original code:"+super.hashCode());
         return 21;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Stuntman");
+            Stuntman stuntman1 = this;
+            Stuntman stuntman2 = (Stuntman) obj;
+            if (stuntman1.name == stuntman2.name ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -25,11 +25,11 @@ public class Helicopter extends Vehicle {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is Helicopter");
+            Helicopter helicopter1 = this;
+            Helicopter helicopter2 = (Helicopter) obj;
+            if (helicopter1.model == helicopter2.model && helicopter1.rotorBlades == helicopter2.rotorBlades && helicopter1.isMilitary == helicopter2.isMilitary) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

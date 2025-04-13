@@ -24,4 +24,17 @@ public class Yajamana extends Cinema {
         System.out.println("Original code:"+super.hashCode());
         return 11;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Yajamana");
+            Yajamana yajamana1 = this;
+            Yajamana yajamana2 = (Yajamana) obj;
+            if (yajamana1.actorName == yajamana2.actorName ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

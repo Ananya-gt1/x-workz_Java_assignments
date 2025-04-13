@@ -24,4 +24,17 @@ public class Sita extends God {
         System.out.println("Original code:"+super.hashCode());
         return 26;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Sita");
+            Sita sita1 = this;
+            Sita sita2 = (Sita) obj;
+            if (sita1.name == sita2.name ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

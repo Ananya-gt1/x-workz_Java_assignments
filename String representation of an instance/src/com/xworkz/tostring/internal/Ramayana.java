@@ -22,4 +22,17 @@ public class Ramayana extends Epic {
         System.out.println("Original code:"+super.hashCode());
         return 39;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Ramayana");
+            Ramayana ramayana1 = this;
+            Ramayana ramayana2 = (Ramayana) obj;
+            if (ramayana1.author == ramayana2.author ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

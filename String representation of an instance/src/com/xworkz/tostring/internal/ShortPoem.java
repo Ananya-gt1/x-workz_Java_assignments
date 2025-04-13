@@ -22,4 +22,17 @@ public class ShortPoem extends Literature {
         System.out.println("Original code:"+super.hashCode());
         return 30;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is ShortPoem");
+            ShortPoem shortPoem1 = this;
+            ShortPoem shortPoem2 = (ShortPoem) obj;
+            if (shortPoem1.title == shortPoem2.title ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

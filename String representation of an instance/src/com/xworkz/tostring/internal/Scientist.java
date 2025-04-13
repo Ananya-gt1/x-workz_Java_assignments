@@ -22,4 +22,17 @@ public class Scientist extends Human {
         System.out.println("Original code:"+super.hashCode());
         return 34;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Scientist");
+            Scientist  scientist1 = this;
+            Scientist scientist2 = (Scientist) obj;
+            if (scientist1.name == scientist2.name ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

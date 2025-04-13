@@ -22,4 +22,17 @@ public class Scooter extends Vehicle {
         System.out.println("Original code:"+super.hashCode());
         return 33;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Scooter");
+            Scooter scooter1 = this;
+            Scooter scooter2 = (Scooter) obj;
+            if (scooter1.brand == scooter2.brand ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

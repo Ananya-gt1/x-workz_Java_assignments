@@ -25,11 +25,11 @@ public class FilmIndustry extends Industry {
     @Override
     public boolean equals(Object obj) {
         if(obj!=null){
-            System.out.println("The reference is Airplane");
-            Airplane airplane1 = this;
-            Airplane airplane2 = (Airplane) obj;
-            if (airplane1.airline == airplane2.airline && airplane1.passengerCapacity == airplane2.passengerCapacity && airplane1.isInternational == airplane2.isInternational) {
-                System.out.println("The Air Plane are same.....");
+            System.out.println("The reference is FilmIndustry");
+            FilmIndustry filmIndustry1 = this;
+            FilmIndustry filmIndustry2 = (FilmIndustry) obj;
+            if (filmIndustry1.industryName == filmIndustry2.industryName && filmIndustry1.headquarters == filmIndustry2.headquarters && filmIndustry1.numberOfMoviesPerYear == filmIndustry2.numberOfMoviesPerYear) {
+                System.out.println("The objects are same.....");
                 return true;
             }
         }

@@ -22,4 +22,17 @@ public class SamsungTV extends Television {
         System.out.println("Original code:"+super.hashCode());
         return 35;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is SamsungTV");
+            SamsungTV samsungTV1 = this;
+            SamsungTV samsungTV2 = (SamsungTV) obj;
+            if (samsungTV1.screenSize == samsungTV2.screenSize ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

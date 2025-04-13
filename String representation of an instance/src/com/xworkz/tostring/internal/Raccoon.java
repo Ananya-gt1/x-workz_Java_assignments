@@ -22,4 +22,17 @@ public class Raccoon extends WildAnimal {
         System.out.println("Original code:"+super.hashCode());
         return 40;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is Raccoon");
+            Raccoon raccoon1 = this;
+            Raccoon raccoon2 = (Raccoon) obj;
+            if (raccoon1.hasMaskFace == raccoon2.hasMaskFace ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }

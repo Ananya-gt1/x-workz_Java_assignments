@@ -24,4 +24,17 @@ public class ShriRama extends God {
         System.out.println("Original code:"+super.hashCode());
         return 28;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            System.out.println("The reference is ShriRama");
+            ShriRama shriRama1 = this;
+            ShriRama shriRama2 = (ShriRama) obj;
+            if (shriRama1.name == shriRama2.name ) {
+                System.out.println("The objects are same.....");
+                return true;
+            }
+        }
+        return false;
+    }
 }
