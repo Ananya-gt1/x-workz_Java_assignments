@@ -624,6 +624,6 @@ public class MainRunner {
      System.out.println(representationOfYajamaString);
      int intYajama=yajamana1.hashCode();
      System.out.println(intYajama);
-     System.out.println(yajamana1.equals(yajamana2));
+     System.out.println(yajamana1.equals(yajamana2));;
     }
 }
