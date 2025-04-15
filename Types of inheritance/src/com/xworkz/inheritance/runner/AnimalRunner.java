@@ -33,5 +33,4 @@ public class AnimalRunner {
         cheetah.run();
         cheetah.fast(cheetah);
     }
-
 }
