@@ -7,8 +7,6 @@ public abstract class CarRace {
     public void driving(){
         System.out.println("Running driving in Car race...");
     }
-    @Override
-    public abstract void chasing(){
-        System.out.println("Running chasing in Car race...");
-    }
+
+    public abstract void chasing();
 }
