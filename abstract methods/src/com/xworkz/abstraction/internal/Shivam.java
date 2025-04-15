@@ -18,4 +18,7 @@ public abstract class Shivam {
         this(actor, actress, director);
         this.cost=cost;
     }
+    public void displayMovie(){
+        System.out.println("The Details:"+this.actor+" , "+this.actress+" , "+this.director+" , "+this.cost);
+    }
 }

@@ -10,4 +10,5 @@ public class Movie extends Shivam{
     public Movie(String actor, String actress, String director, double cost) {
         super(actor, actress, director, cost);
     }
+
 }

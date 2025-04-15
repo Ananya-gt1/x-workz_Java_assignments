@@ -11,5 +11,8 @@ public abstract class BikeRace {
         this.location=location;
         System.out.println("The no argument constructor of Bike race.....");
     }
+    public void displayBike(){
+        System.out.println("The details:"+this.bikeName+" , "+this.raceTime+" , "+this.location);
+    }
 
 }
