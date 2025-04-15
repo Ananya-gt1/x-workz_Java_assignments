@@ -1,6 +1,8 @@
 package com.xworkz.inheritance.runner;
 
 import com.xworkz.inheritance.hierarchical.*;
+import com.xworkz.inheritance.multilevel.School;
+import com.xworkz.inheritance.single.Shiva;
 
 public class AnimalRunner {
     public static void main(String[] args) {
@@ -32,5 +34,10 @@ public class AnimalRunner {
         Cheetah cheetah=new Cheetah();
         cheetah.run();
         cheetah.fast(cheetah);
+
+        School school=new School();
+
+        Shiva shiva=new Shiva();
+
     }
 }
