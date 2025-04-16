@@ -38,6 +38,6 @@ public class AnimalRunner {
         School school=new School();
 
         Shiva shiva=new Shiva();
-
+;
     }
 }
