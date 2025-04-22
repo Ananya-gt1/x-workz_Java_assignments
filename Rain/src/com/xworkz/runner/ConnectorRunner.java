@@ -11,6 +11,6 @@ public class ConnectorRunner {
 
         ConnectUser connectUser=new ConnectUser(connector);
 
-        connectUser.excute();
+        connectUser.excute();;;;;
     }
 }
