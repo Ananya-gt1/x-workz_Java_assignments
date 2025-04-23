@@ -3,7 +3,7 @@ package com.xworkz.ani.external;
 import com.xworkz.ani.internal.AirTraffic;
 
 public class AAI {
-    AirTraffic icc;
+    AirTraffic icc;;
 
     public AAI(AirTraffic icc) {
         this.icc = icc;
