@@ -7,6 +7,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-black navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.jsp">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link "  href="BirthCertificate.jsp">Birth Certificate</a>
+                <a class="nav-link" href="DeathCertificate.jsp">Death certificate</a>
+                <a class="nav-link" href="DrivingLicense.jsp">Driving License</a>
+                <a class="nav-link" href="JobApplication.jsp">Job Application</a>
+                <a class="nav-link" href="MarriageCertificate.jsp">Marriage Certificate</a>
+                <a class="nav-link active" href="PassportApplication.jsp">Passport Application</a>
+            </div>
+        </div>
+    </div>
+</nav>
 <form class="row g-3" action="passport" method="POST">
     <div class="col-md-6">
         <label for="nameId" class="form-label">Applicant Name:</label>

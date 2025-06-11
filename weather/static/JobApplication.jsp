@@ -17,41 +17,52 @@
             <div class="navbar-nav">
                 <a class="nav-link "  href="BirthCertificate.jsp">Birth Certificate</a>
                 <a class="nav-link" href="DeathCertificate.jsp">Death certificate</a>
-                <a class="nav-link active" href="DrivingLicense.jsp">Driving License</a>
-                <a class="nav-link" href="JobApplication.jsp">Job Application</a>
+                <a class="nav-link" href="DrivingLicense.jsp">Driving License</a>
+                <a class="nav-link active" href="JobApplication.jsp">Job Application</a>
                 <a class="nav-link" href="MarriageCertificate.jsp">Marriage Certificate</a>
                 <a class="nav-link" href="PassportApplication.jsp">Passport Application</a>
             </div>
         </div>
     </div>
 </nav>
-<form class="row g-3" action="drive" method="POST">
+<form class="row g-3" action="job" method="POST">
     <div class="col-md-6">
         <label for="nameId" class="form-label">Name:</label>
         <input type="text" class="form-control" name="name" id="nameId">
     </div>
     <div class="col-md-6">
-        <label for="addressId" class="form-label">Address:</label>
-        <input type="text" class="form-control" name="address" id="addressId">
-    </div>
-    <div class="col-md-6">
-        <label for="mobileNoId" class="form-label">Mobile No:</label>
-        <input type="number" class="form-control" name="mobileNo" id="mobileNoId">
-    </div>
-    <div class="col-md-6">
-        <label for="appliedDateId" class="form-label">Applied Date:</label>
-        <input type="date" class="form-control" name="appliedDate" id="appliedDateId">
+        <label for="emailId" class="form-label">Email:</label>
+        <input type="text" class="form-control" name="email" id="emailId">
     </div>
     <div class="col-md-4">
-        <label for="vehicleTypeId" class="form-label">Vehicle Type:</label>
-        <select id="vehicleTypeId" name="vehicleType" class="form-select">
+        <label for="educationId" class="form-label">Education:</label>
+        <select id="educationId" name="education" class="form-select">
             <option selected>select</option>
-            <option value="Motorcycle">Motorcycle</option>
-            <option value="Van">Van</option>
-            <option value="Bus">Bus</option>
-            <option value="Car">Car</option>
-            <option value="Truck">Truck</option>
-            <option value="Sports Car">Sports Car</option>
+            <option value="BE">BE</option>
+            <option value="BCA">BCA/option>
+            <option value="MBA">MBA</option>
+            <option value="MCA">MCA</option>
+            <option value="LLB">LLB</option>
+            <option value="M.Tech">M.Tech</option>
+        </select>
+    </div>
+    <div class="col-md-6">
+        <label for="skillId" class="form-label">Skills:</label>
+        <input type="text" class="form-control" name="skills" id="skillId">
+    </div>
+    <div class="col-md-6">
+        <label for="expectedSalaryId" class="form-label">Expected Salary:</label>
+        <input type="text" class="form-control" name="expectedSalary" id="expectedSalaryId">
+    </div>
+    <div class="col-md-4">
+        <label for="experienceId" class="form-label">Experience:</label>
+        <select id="experienceId" name="experience" class="form-select">
+            <option selected>select</option>
+            <option value="0 year">0 year</option>
+            <option value="1 year">1 year</option>
+            <option value="2 years">2 years</option>
+            <option value="3 years">3 years</option>
+            <option value="4+ years">4+ years</option>
         </select>
     </div>
     <div class="col-12">
