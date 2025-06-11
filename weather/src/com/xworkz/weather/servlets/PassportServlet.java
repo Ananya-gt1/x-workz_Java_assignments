@@ -2,6 +2,8 @@ package com.xworkz.weather.servlets;
 
 import com.xworkz.weather.dto.BirthDTO;
 import com.xworkz.weather.dto.PassportDTO;
+import com.xworkz.weather.service.PassportService;
+import com.xworkz.weather.service.PassportServiceImpl;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
@@ -28,7 +30,11 @@ public class PassportServlet extends HttpServlet {
         String passportType=req.getParameter("passportType");
         String payment=req.getParameter("payment");
 
-        PassportDTO DTO=new PassportDTO(name,adharNo,address,panNo,state,city,pincode,passportType,payment);
-        System.out.println("Birth Certificate"+DTO);
+        PassportDTO dto=new PassportDTO(name,adharNo,address,panNo,state,city,pincode,passportType,payment);
+        System.out.println("Birth Certificate"+dto);
+
+        PassportService passportService=new PassportServiceImpl();
+        passportService.passportValidate(dto);
+
     }
 }

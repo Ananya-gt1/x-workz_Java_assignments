@@ -2,6 +2,8 @@ package com.xworkz.weather.servlets;
 
 import com.xworkz.weather.dto.BirthDTO;
 import com.xworkz.weather.dto.DriveDTO;
+import com.xworkz.weather.service.DriveService;
+import com.xworkz.weather.service.DriveServiceImpl;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
@@ -24,7 +26,10 @@ public class DriveServlet extends HttpServlet {
         String appliedDate=req.getParameter("appliedDate");
         String vehicleType=req.getParameter("vehicleType");
 
-        DriveDTO DTO=new DriveDTO(name,address,mobileNo,appliedDate,vehicleType);
-        System.out.println("Driving License Certificate"+DTO);
+        DriveDTO dto=new DriveDTO(name,address,mobileNo,appliedDate,vehicleType);
+        System.out.println("Driving License Certificate"+dto);
+
+        DriveService driveService=new DriveServiceImpl();
+        driveService.driveValidate(dto);
     }
 }

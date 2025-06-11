@@ -1,6 +1,8 @@
 package com.xworkz.weather.servlets;
 
 import com.xworkz.weather.dto.BirthDTO;
+import com.xworkz.weather.service.BirthService;
+import com.xworkz.weather.service.BirthServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,7 +24,10 @@ public class BirthServlet extends HttpServlet {
         String hospitalName=req.getParameter("hospitalName");
         String hospitalType=req.getParameter("hospitalType");
 
-        BirthDTO birthDTO=new BirthDTO(birthName,fatherName,motherName,doctorName,nurseName,hospitalName,hospitalType);
-        System.out.println("Birth Certificate"+birthDTO);
+        BirthDTO dto=new BirthDTO(birthName,fatherName,motherName,doctorName,nurseName,hospitalName,hospitalType);
+        System.out.println("Birth Certificate"+dto);
+
+        BirthService birthService=new BirthServiceImpl();
+        birthService.birthValidate(dto);
     }
 }

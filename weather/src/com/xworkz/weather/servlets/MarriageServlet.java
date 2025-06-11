@@ -2,6 +2,8 @@ package com.xworkz.weather.servlets;
 
 import com.xworkz.weather.dto.BirthDTO;
 import com.xworkz.weather.dto.MarriageDTO;
+import com.xworkz.weather.service.MarriageService;
+import com.xworkz.weather.service.MarriageServiceImpl;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
@@ -28,7 +30,10 @@ public class MarriageServlet extends HttpServlet {
         String witness2 = req.getParameter("witness2");
         String officerPresent = req.getParameter("officerPresent");
 
-        MarriageDTO DTO = new MarriageDTO(groomName, brideName, location, address, religion, date, witness1,witness2,officerPresent);
-        System.out.println("Birth Certificate" + DTO);
+        MarriageDTO dto = new MarriageDTO(groomName, brideName, location, address, religion, date, witness1,witness2,officerPresent);
+        System.out.println("Birth Certificate" + dto);
+
+        MarriageService marriageService=new MarriageServiceImpl();
+        marriageService.marriageValidate(dto);
     }
 }

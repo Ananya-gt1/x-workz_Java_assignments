@@ -2,6 +2,8 @@ package com.xworkz.weather.servlets;
 
 import com.xworkz.weather.dto.BirthDTO;
 import com.xworkz.weather.dto.JobDTO;
+import com.xworkz.weather.service.JobService;
+import com.xworkz.weather.service.JobServiceImpl;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
@@ -25,7 +27,10 @@ public class JobServlet extends HttpServlet {
         String expectedSalary=req.getParameter("expectedSalary");
         String experience=req.getParameter("experience");
 
-        JobDTO DTO=new JobDTO(name,email,education,skills,expectedSalary,experience);
-        System.out.println("Birth Certificate"+DTO);
+        JobDTO dto=new JobDTO(name,email,education,skills,expectedSalary,experience);
+        System.out.println("Birth Certificate"+dto);
+
+        JobService jobService=new JobServiceImpl();
+        jobService.jobValidate(dto);
     }
 }

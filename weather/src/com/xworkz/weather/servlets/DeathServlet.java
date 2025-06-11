@@ -2,6 +2,8 @@ package com.xworkz.weather.servlets;
 
 import com.xworkz.weather.dto.BirthDTO;
 import com.xworkz.weather.dto.DeathDTO;
+import com.xworkz.weather.service.DeathService;
+import com.xworkz.weather.service.DeathServiceImpl;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
@@ -29,7 +31,10 @@ public class DeathServlet extends HttpServlet {
         String gender=req.getParameter("gender");
         String marks=req.getParameter("marks");
 
-        DeathDTO DTO=new DeathDTO(name,cause,date,time,ageAtDeath,certifiedBy,hospitalName,mannerOfDeath,gender,marks);
-        System.out.println("Death Certificate"+DTO);
+        DeathDTO dto=new DeathDTO(name,cause,date,time,ageAtDeath,certifiedBy,hospitalName,mannerOfDeath,gender,marks);
+        System.out.println("Death Certificate"+dto);
+
+        DeathService deathService=new DeathServiceImpl();
+        deathService.deathValidate(dto);
     }
 }
