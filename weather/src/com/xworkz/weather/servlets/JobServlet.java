@@ -24,7 +24,7 @@ public class JobServlet extends HttpServlet {
         String email=req.getParameter("email");
         String education=req.getParameter("education");
         String skills=req.getParameter("skills");
-        String expectedSalary=req.getParameter("expectedSalary");
+        int expectedSalary=Integer.parseInt(req.getParameter("expectedSalary"));
         String experience=req.getParameter("experience");
 
         JobDTO dto=new JobDTO(name,email,education,skills,expectedSalary,experience);

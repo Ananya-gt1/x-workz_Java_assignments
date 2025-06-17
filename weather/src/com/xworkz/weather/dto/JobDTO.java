@@ -7,10 +7,10 @@ public class JobDTO implements Serializable {
     private String email;
     private String education;
     private String skills;
-    private String expectedSalary;
+    private int expectedSalary;
     private String experience;
 
-    public JobDTO(String name, String email, String education, String skills, String expectedSalary, String experience) {
+    public JobDTO(String name, String email, String education, String skills, int expectedSalary, String experience) {
         this.name = name;
         this.email = email;
         this.education = education;
@@ -51,11 +51,11 @@ public class JobDTO implements Serializable {
         this.skills = skills;
     }
 
-    public String getExpectedSalary() {
+    public int getExpectedSalary() {
         return expectedSalary;
     }
 
-    public void setExpectedSalary(String expectedSalary) {
+    public void setExpectedSalary(int expectedSalary) {
         this.expectedSalary = expectedSalary;
     }
 
