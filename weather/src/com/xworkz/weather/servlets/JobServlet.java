@@ -30,6 +30,7 @@ public class JobServlet extends HttpServlet {
         JobService jobService=new JobServiceImpl();
         String result=jobService.jobValidate(jobDTO);
 
+        //servlet chaining
         RequestDispatcher requestDispatcher=req.getRequestDispatcher("JobApplication.jsp");
         req.setAttribute("message",result);
 
