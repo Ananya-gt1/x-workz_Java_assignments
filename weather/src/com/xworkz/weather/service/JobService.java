@@ -3,6 +3,6 @@ package com.xworkz.weather.service;
 import com.xworkz.weather.dto.JobDTO;
 
 public interface JobService {
-   public String jobValidate(JobDTO dto);
+   public String jobValidate(JobDTO jobDTO);
 
 }

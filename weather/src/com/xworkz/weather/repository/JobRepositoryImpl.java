@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 public class JobRepositoryImpl implements JobRepository{
     @Override
-    public void save(JobDTO dto) {
+    public void save(JobDTO jobDTO) {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -17,7 +17,7 @@ public class JobRepositoryImpl implements JobRepository{
             String username="root";
             String password="8904109027@Ani";
             Connection connection=DriverManager.getConnection(url,username,password);
-            String sql="insert into job_details values(0,'"+dto.getName()+"','"+dto.getEmail()+"','"+dto.getEducation()+"','"+dto.getExpectedSalary()+"','"+dto.getExperience()+"')";
+            String sql="insert into job_details values(0,'"+jobDTO.getName()+"','"+jobDTO.getEmail()+"','"+jobDTO.getEducation()+"','"+jobDTO.getExpectedSalary()+"','"+jobDTO.getExperience()+"')";
             Statement statement=connection.createStatement();
             statement.executeUpdate(sql);
             System.out.println("Connection:"+connection);

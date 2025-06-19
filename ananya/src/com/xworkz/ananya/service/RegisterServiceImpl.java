@@ -8,7 +8,10 @@ public class RegisterServiceImpl implements RegisterService{
     @Override
     public String registerValidate(RgisterDTO dto) {
         RegisterRepository registerRepository=new RegisterRepositoryImpl();
-        registerRepository.save(dto);
-        return "Failed";
+        String name= dto.getNameName();
+        if(dto.getNameName()==null || ()<4 ||) {
+            registerRepository.save(dto);
+            return "The form submitted successfully";
+        }
     }
 }

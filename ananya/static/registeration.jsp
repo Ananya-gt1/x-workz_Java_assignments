@@ -10,7 +10,7 @@
 <form class="row g-3" action="register" method="POST">
     <div class="col-md-6">
         <label for="nameId" class="form-label">User Name:</label>
-        <input type="text" class="form-control" name="nameName" id="nameId">
+        <input type="text" class="form-control" name="nameName" id="nameId" value=${dto.name}>
     </div>
     <div class="col-md-6">
         <label for="mobileNoId" class="form-label">Mobile No.:</label>

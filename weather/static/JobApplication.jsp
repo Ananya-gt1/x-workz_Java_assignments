@@ -27,8 +27,8 @@
 </nav>
 <form class="row g-3" action="job" method="POST">
     <div class="col-md-6">
-        <label for="nameId" class="form-label">Name:</label>
-        <input type="text" class="form-control" name="name" id="nameId">
+        <label for="nameId" class="form-label">Name:</label> <span>${message}</span>
+        <input type="text" class="form-control" name="name" id="nameId" value="${jobDTO.name}">
     </div>
     <div class="col-md-6">
         <label for="emailId" class="form-label">Email:</label>
@@ -39,7 +39,7 @@
         <select id="educationId" name="education" class="form-select">
             <option selected>select</option>
             <option value="BE">BE</option>
-            <option value="BCA">BCA/option>
+            <option value="BCA">BCA</option>
             <option value="MBA">MBA</option>
             <option value="MCA">MCA</option>
             <option value="LLB">LLB</option>

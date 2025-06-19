@@ -5,10 +5,7 @@ import com.xworkz.weather.dto.JobDTO;
 import com.xworkz.weather.service.JobService;
 import com.xworkz.weather.service.JobServiceImpl;
 
-import javax.servlet.GenericServlet;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -27,10 +24,19 @@ public class JobServlet extends HttpServlet {
         int expectedSalary=Integer.parseInt(req.getParameter("expectedSalary"));
         String experience=req.getParameter("experience");
 
-        JobDTO dto=new JobDTO(name,email,education,skills,expectedSalary,experience);
-        System.out.println("Birth Certificate"+dto);
+        JobDTO jobDTO=new JobDTO(name,email,education,skills,expectedSalary,experience);
+        System.out.println("Job Application"+jobDTO);
 
         JobService jobService=new JobServiceImpl();
-        jobService.jobValidate(dto);
+        String result=jobService.jobValidate(jobDTO);
+
+        RequestDispatcher requestDispatcher=req.getRequestDispatcher("JobApplication.jsp");
+        req.setAttribute("message",result);
+
+        if(!result.equals("The form submitted successfully"))
+        {
+            req.setAttribute("jobDTO",jobDTO);
+        }
+        requestDispatcher.forward(req,resp);
     }
 }

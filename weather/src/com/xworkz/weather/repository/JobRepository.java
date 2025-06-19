@@ -4,5 +4,5 @@ import com.xworkz.weather.dto.JobDTO;
 
 public interface JobRepository {
 
-    public void save(JobDTO dto);
+    public void save(JobDTO jobDTO);
 }
